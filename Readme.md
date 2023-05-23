@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Иван Жиребный](https://up.htmlacademy.ru/htmlcss/37/user/2368061).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
