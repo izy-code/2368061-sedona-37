@@ -7,18 +7,18 @@
   <body>
     <header class="page-header" data-test="header">
       <nav class="nav">
-        <a class="nav__logo" href="index.html" aria-current="page">
+        <a class="nav__logo" href="index.html" aria-label="Перейти на главную страницу">
           <img class="nav__img" src="#" alt="Логотип города Седона.">
         </a>
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link nav__link_current" title="Текущая страница">Главная</a>
+            <a class="nav__link" href="index.html">Главная</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#">О Cедоне</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="catalog.html">Гостиницы</a>
+            <a class="nav__link nav__link_current" title="Текущая страница">Гостиницы</a>
           </li>
         </ul>
         <ul class="nav__list nav__list_user">
@@ -29,7 +29,7 @@
             <a class="nav__button nav__button_favorites" href="#">
               <span class="visually-hidden">Избранное </span>
               <span class="nav__favorites">12</span>
-              <span class="visually-hidden">отелей</span>
+              <span class="visually-hidden">гостиниц</span>
             </a>
           </li>
           <li class="nav__item">
@@ -103,13 +103,13 @@
             <legend class="form-filter__legend">Стоимость, ₽:</legend>
             <label class="form-filter__label">
               <span class="form-filter__span">от</span>
-              <input class="form-filter__input form-filter__input_price_from" type="number" name="price-from"
-                placeholder="0">
+              <input class="form-filter__input form-filter__input_price_from" type="number" name="price-from" min="0"
+                max="11500" placeholder="0">
             </label>
             <label class="form-filter__label">
               <span class="form-filter__span">до</span>
-              <input class="form-filter__input form-filter__input_price_to" type="number" name="price-to"
-                placeholder="9000">
+              <input class="form-filter__input form-filter__input_price_to" type="number" name="price-to" min="0"
+                max="11500" placeholder="9000">
             </label>
           </fieldset>
           <div class="form-filter__fieldset">
@@ -125,15 +125,23 @@
           <option value="cheap" selected>Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a class="catalog__button catalog__button_tile catalog__button_active" href="#">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="catalog__button catalog__button_slideshow" href="#">
-          <span class="visually-hidden">Показать слайдер</span>
-        </a>
-        <a class="catalog__button catalog__button_list" href="#">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+        <ul class="catalog__button-list button-list-catalog">
+          <li class="button-list-catalog__item">
+            <a class="catalog__button catalog__button_tile catalog__button_active" href="#">
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+          </li>
+          <li class="button-list-catalog__item">
+            <a class="catalog__button catalog__button_slideshow" href="#">
+              <span class="visually-hidden">Показать слайдер</span>
+            </a>
+          </li>
+          <li class="button-list-catalog__item">
+            <a class="catalog__button catalog__button_list" href="#">
+              <span class="visually-hidden">Показать список</span>
+            </a>
+          </li>
+        </ul>
         <ul class="catalog__list">
           <li class="catalog__item item-catalog">
             <a href="" class="item-catalog__link">
@@ -144,8 +152,8 @@
               <span class="item-catalog__housing">Гостиница</span>
               <span class="item-catalog__price">От 4000 ₽</span>
             </p>
-            <a class="button button_more" href="#">подробнее</a>
-            <button class="button button_favorite" type="button">в избранное</button>
+            <a class="button button_more" href="#">Подробнее</a>
+            <button class="button button_favorite" type="button">В избранное</button>
             <p class="item-catalog__rating-wrapper">
               <span class="visually-hidden" aria-hidden="true">&starf;&starf;&starf;&starf;&star;</span>
               <span class="item-catalog__rating">Рейтинг: 8,5</span>
@@ -160,8 +168,8 @@
               <span class="item-catalog__housing">Гостиница</span>
               <span class="item-catalog__price">От 5000 ₽</span>
             </p>
-            <a class="button button_more" href="#">подробнее</a>
-            <button class="button button_favorite button_favorite_active" type="button">в избранном</button>
+            <a class="button button_more" href="#">Подробнее</a>
+            <button class="button button_favorite button_favorite_active" type="button">В избранном</button>
             <p class="item-catalog__rating-wrapper">
               <span class="visually-hidden" aria-hidden="true">&starf;&starf;&starf;&starf;&star;</span>
               <span class="item-catalog__rating">Рейтинг: 9,2</span>
@@ -169,15 +177,16 @@
           </li>
           <li class="catalog__item item-catalog">
             <a class="item-catalog__link" href="#">
-              <img class="item-catalog__img" src="#" alt="Скалистая гора, покрытая зелёной растительностью, на фоне голубого неба.">
+              <img class="item-catalog__img" src="#"
+                alt="Скалистая гора, покрытая зелёной растительностью, на фоне голубого неба.">
               <h3 class="item-catalog__title">Desert Quail Inn</h3>
             </a>
             <p class="item-catalog__price-wrapper">
               <span class="item-catalog__housing">Гостиница</span>
               <span class="item-catalog__price">От 2500 ₽</span>
             </p>
-            <a class="button button_more" href="#">подробнее</a>
-            <button class="button button_favorite" type="button">в избранное</button>
+            <a class="button button_more" href="#">Подробнее</a>
+            <button class="button button_favorite" type="button">В избранное</button>
             <p class="item-catalog__rating-wrapper">
               <span class="visually-hidden" aria-hidden="true">&starf;&starf;&starf;&star;&star;</span>
               <span class="item-catalog__rating">Рейтинг: 6,9</span>
@@ -192,8 +201,8 @@
               <span class="item-catalog__housing">Гостиница</span>
               <span class="item-catalog__price">От 1500 ₽</span>
             </p>
-            <a class="button button_more" href="#">подробнее</a>
-            <button class="button button_favorite" type="button">в избранное</button>
+            <a class="button button_more" href="#">Подробнее</a>
+            <button class="button button_favorite" type="button">В избранное</button>
             <p class="item-catalog__rating-wrapper">
               <span class="visually-hidden" aria-hidden="true">&starf;&starf;&star;&star;&star;</span>
               <span class="item-catalog__rating">Рейтинг: 5,0</span>
