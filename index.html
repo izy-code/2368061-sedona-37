@@ -12,7 +12,7 @@
         </a>
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link nav__link_active" title="Текущая страница">Главная</a>
+            <a class="nav__link nav__link_current" title="Текущая страница">Главная</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#">О Cедоне</a>
@@ -38,12 +38,13 @@
         </ul>
       </nav>
     </header>
+
     <main class="main-index">
       <h1 class="visually-hidden">Седона</h1>
       <section class="hero">
-        <img class="hero__img hero__img_1" src="#" alt="WELCOME">
-        <img class="hero__img hero__img_2" src="#" alt="to the gorgeous">
-        <img class="hero__img hero__img_3" src="#" alt="SEDONA &quot;Because the Grand Canyon sucks!&quot;">
+        <img class="hero__img_1" src="#" alt="WELCOME">
+        <img class="hero__img_2" src="#" alt="to the gorgeous">
+        <img class="hero__img_3" src="#" alt="SEDONA &quot;Because the Grand Canyon sucks!&quot;">
         <h2 class="hero__title">Седона — небольшой городок в Аризоне,
           заслуживающий большего!</h2>
         <p class="hero__content">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -80,7 +81,7 @@
         <h2 class="advantages__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p class="advantages__content">Опытный персонал и качественное обслуживание!</p>
         <ul class="advantages__list advantages__list_recommend">
-          <li class="advantages__item item-adv item-adv_text item-adv_color_2 item-adv_lodging">
+          <li class="advantages__item item-adv item-adv_text item-adv_color_2 item-adv_housing">
             <h3 class="item-adv__title">Жильё</h3>
             <p class="item-adv__content">Рекомендуем пожить<br>в настоящем мотеле,<br>
               всё как в кино!</p>
@@ -105,11 +106,12 @@
         <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
         <p class="subscribe__content">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" name="subscribe-email" placeholder="Ваш e-mail">
+          <input class="subscribe__input" type="email" name="subscribe-email" placeholder="Ваш e-mail">
           <button class="button subscribe__button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
+
     <footer class="page-footer">
       <ul class="page-footer__socials socials-footer">
         <li class="socials-footer__item">
