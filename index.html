@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="nav">
         <a class="nav__logo" href="index.html" aria-current="page">
           <img class="nav__img" src="#" alt="Логотип CITY OF CEDONA.">
@@ -39,9 +39,9 @@
       </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-index" data-test="main">
       <h1 class="visually-hidden">Седона</h1>
-      <section class="hero">
+      <section class="hero" data-test="hero">
         <img class="hero__img_1" src="#" alt="WELCOME">
         <img class="hero__img_2" src="#" alt="to the gorgeous">
         <img class="hero__img_3" src="#" alt="SEDONA &quot;Because the Grand Canyon sucks!&quot;">
@@ -49,7 +49,7 @@
           заслуживающий большего!</h2>
         <p class="hero__content">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <ul class="advantages__list">
           <li class="advantages__item item-adv item-adv_text item-adv_color_1">
             <h3 class="item-adv__title">Настоящий<br>городок</h3>
@@ -96,13 +96,13 @@
           </li>
         </ul>
       </section>
-      <section class="booking">
-        <h2 class="booking__title">Заинтересовались?</h2>
-        <p class="booking__content">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц
+      <section class="search" data-test="search">
+        <h2 class="search__title">Заинтересовались?</h2>
+        <p class="search__content">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц
           в Седоне</p>
-        <button class="button booking__button" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+        <button class="button search__button" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
       </section>
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
         <p class="subscribe__content">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
@@ -112,7 +112,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <ul class="page-footer__socials socials-footer">
         <li class="socials-footer__item">
           <a class="socials-footer__link socials-footer__link_vk" href="https://vk.com/htmlacademy">

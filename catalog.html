@@ -5,7 +5,7 @@
     <title>HTML Academy: Гостиницы Седоны</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="nav">
         <a class="nav__logo" href="index.html" aria-current="page">
           <img class="nav__img" src="#" alt="Логотип CITY OF CEDONA.">
@@ -39,8 +39,8 @@
       </nav>
     </header>
 
-    <main class="main-inner">
-      <section class="filter">
+    <main class="main-inner" data-test="main">
+      <section class="filter" data-test="filter">
         <h1 class="filter__title">Гостиницы Седоны</h1>
         <ol class="filter__breadcrumbs breadcrumbs-filter">
           <li class="breadcrumbs-filter__item">
@@ -118,7 +118,7 @@
           </fieldset>
         </form>
       </section>
-      <section class="catalog">
+      <section class="catalog" data-test="catalog">
         <h2>Найдено гостиниц: 38</h2>
         <select class="catalog__select" name="select-sort" aria-label="Сортировка">
           <option value="popular">Сначала популярные</option>
@@ -211,7 +211,7 @@
           </li>
         </ul>
       </section>
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
         <p class="subscribe__content">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
@@ -221,7 +221,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <ul class="page-footer__socials socials-footer">
         <li class="socials-footer__item">
           <a class="socials-footer__link socials-footer__link_vk" href="https://vk.com/htmlacademy">
