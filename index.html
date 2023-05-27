@@ -23,12 +23,16 @@
         </ul>
         <ul class="nav__list nav__list_user">
           <li class="nav__item">
-            <a class="nav__link" href="#">
-              <span class="visually-hidden">Поиск</span></a>
+            <button class="nav__button nav__button_search" type="button">Поиск</button>
           </li>
           <li class="nav__item">
-            <span class="visually-hidden">Число добавлений в избранное:</span>
-            <span class="nav__favorites">12</span>
+            <a class="nav__link nav__link_favorites" href="#">
+              <span class="visually-hidden">Избранное </span>
+              <span class="nav__favorites">12</span>
+              <span class="visually-hidden">отелей</span>
+            </a>
+          </li>
+          <li class="nav__item">
             <button class="button nav__button" type="button">ХОЧУ СЮДА!</button>
           </li>
         </ul>
@@ -76,19 +80,16 @@
         <h2 class="advantages__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p class="advantages__content">Опытный персонал и качественное обслуживание!</p>
         <ul class="advantages__list advantages__list_recommend">
-          <li class="advantages__item item-adv item-adv_text item-adv_color_2">
-            <img class="item-adv__img" src="#" alt="">
+          <li class="advantages__item item-adv item-adv_text item-adv_color_2 item-adv_lodging">
             <h3 class="item-adv__title">Жильё</h3>
             <p class="item-adv__content">Рекомендуем пожить<br>в настоящем мотеле,<br>
               всё как в кино!</p>
           </li>
-          <li class="advantages__item item-adv item-adv_text item-adv_color_3">
-            <img class="item-adv__img" src="#" alt="">
+          <li class="advantages__item item-adv item-adv_text item-adv_color_3 item-adv_food">
             <h3 class="item-adv__title">Еда</h3>
             <p class="item-adv__content">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
           </li>
-          <li class="advantages__item item-adv item-adv_text item-adv_color_2">
-            <img class="item-adv__img" src="#" alt="">
+          <li class="advantages__item item-adv item-adv_text item-adv_color_2 item-adv_souvenirs">
             <h3 class="item-adv__title">Сувениры</h3>
             <p class="item-adv__content">Не только китайского,<br>но и настоящего местного<br>производства!</p>
           </li>
@@ -109,5 +110,28 @@
         </form>
       </section>
     </main>
+    <footer class="page-footer">
+      <ul class="page-footer__socials socials-footer">
+        <li class="socials-footer__item">
+          <a class="socials-footer__link socials-footer__link_vk" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="socials-footer__item">
+          <a class="socials-footer__link socials-footer__link_telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+        <li class="socials-footer__item">
+          <a class="socials-footer__link socials-footer__link_youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+      <a class="page-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="page-footer__htmlacademy-link" href="https://htmlacademy.ru/">
+        <img class="page-footer__htmlacademy-logo" src="#" alt=".html academy">
+      </a>
+    </footer>
   </body>
 </html>
