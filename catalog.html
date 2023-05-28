@@ -18,22 +18,22 @@
             <a class="nav__link" href="#">О Cедоне</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link_current" title="Текущая страница">Гостиницы</a>
+            <a class="nav__link nav__link--current" title="Текущая страница">Гостиницы</a>
           </li>
         </ul>
-        <ul class="nav__list nav__list_user">
+        <ul class="nav__list nav__list--user">
           <li class="nav__item">
-            <button class="nav__button nav__button_search" type="button">Поиск</button>
+            <button class="nav__button nav__button--search" type="button">Поиск</button>
           </li>
           <li class="nav__item">
-            <a class="nav__button nav__button_favorites" href="#">
+            <a class="nav__button nav__button--favorites" href="#">
               <span class="visually-hidden">Избранное </span>
               <span class="nav__favorites">12</span>
               <span class="visually-hidden">гостиниц</span>
             </a>
           </li>
           <li class="nav__item">
-            <button class="button button_nav" type="button">ХОЧУ СЮДА!</button>
+            <button class="button button--nav" type="button">ХОЧУ СЮДА!</button>
           </li>
         </ul>
       </nav>
@@ -44,7 +44,7 @@
         <h1 class="filter__title">Гостиницы Седоны</h1>
         <ol class="filter__breadcrumbs breadcrumbs-filter">
           <li class="breadcrumbs-filter__item">
-            <a class="breadcrumbs-filter__link breadcrumbs-filter__link_main" href="index.html">
+            <a class="breadcrumbs-filter__link breadcrumbs-filter__link--main" href="index.html">
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
@@ -103,18 +103,18 @@
             <legend class="form-filter__legend">Стоимость, ₽:</legend>
             <label class="form-filter__label">
               <span class="form-filter__span">от</span>
-              <input class="form-filter__input form-filter__input_price_from" type="number" name="price-from" min="0"
+              <input class="form-filter__input form-filter__input--price-from" type="number" name="price-from" min="0"
                 max="11500" placeholder="0">
             </label>
             <label class="form-filter__label">
               <span class="form-filter__span">до</span>
-              <input class="form-filter__input form-filter__input_price_to" type="number" name="price-to" min="0"
+              <input class="form-filter__input form-filter__input--price-to" type="number" name="price-to" min="0"
                 max="11500" placeholder="9000">
             </label>
           </fieldset>
           <div class="form-filter__fieldset">
-            <button class="button button_apply" type="submit">Применить</button>
-            <button class="button button_reset" type="reset">Сбросить</button>
+            <button class="button button--apply" type="submit">Применить</button>
+            <button class="button button--reset" type="reset">Сбросить</button>
           </div>
         </form>
       </section>
@@ -127,17 +127,17 @@
         </select>
         <ul class="catalog__button-list button-list-catalog">
           <li class="button-list-catalog__item">
-            <a class="catalog__button catalog__button_tile catalog__button_active" href="#">
-              <span class="visually-hidden">Показать карточки</span>
+            <a class="catalog__button catalog__button--tile catalog__button--active" href="#">
+              <span class="visually-hidden">Показать плитки</span>
             </a>
           </li>
           <li class="button-list-catalog__item">
-            <a class="catalog__button catalog__button_slideshow" href="#">
+            <a class="catalog__button catalog__button--slideshow" href="#">
               <span class="visually-hidden">Показать слайдер</span>
             </a>
           </li>
           <li class="button-list-catalog__item">
-            <a class="catalog__button catalog__button_list" href="#">
+            <a class="catalog__button catalog__button--list" href="#">
               <span class="visually-hidden">Показать список</span>
             </a>
           </li>
@@ -152,8 +152,8 @@
               <span class="item-catalog__housing">Гостиница</span>
               <span class="item-catalog__price">От 4000 ₽</span>
             </p>
-            <a class="button button_more" href="#">Подробнее</a>
-            <button class="button button_favorite" type="button">В избранное</button>
+            <a class="button button--more" href="#">Подробнее</a>
+            <button class="button button--favorite" type="button">В избранное</button>
             <p class="item-catalog__rating-wrapper">
               <span class="visually-hidden" aria-hidden="true">&starf;&starf;&starf;&starf;&star;</span>
               <span class="item-catalog__rating">Рейтинг: 8,5</span>
@@ -168,8 +168,8 @@
               <span class="item-catalog__housing">Гостиница</span>
               <span class="item-catalog__price">От 5000 ₽</span>
             </p>
-            <a class="button button_more" href="#">Подробнее</a>
-            <button class="button button_favorite button_favorite_active" type="button">В избранном</button>
+            <a class="button button--more" href="#">Подробнее</a>
+            <button class="button button--favorite button--favorite--active" type="button">В избранном</button>
             <p class="item-catalog__rating-wrapper">
               <span class="visually-hidden" aria-hidden="true">&starf;&starf;&starf;&starf;&star;</span>
               <span class="item-catalog__rating">Рейтинг: 9,2</span>
@@ -185,8 +185,8 @@
               <span class="item-catalog__housing">Гостиница</span>
               <span class="item-catalog__price">От 2500 ₽</span>
             </p>
-            <a class="button button_more" href="#">Подробнее</a>
-            <button class="button button_favorite" type="button">В избранное</button>
+            <a class="button button--more" href="#">Подробнее</a>
+            <button class="button button--favorite" type="button">В избранное</button>
             <p class="item-catalog__rating-wrapper">
               <span class="visually-hidden" aria-hidden="true">&starf;&starf;&starf;&star;&star;</span>
               <span class="item-catalog__rating">Рейтинг: 6,9</span>
@@ -201,8 +201,8 @@
               <span class="item-catalog__housing">Гостиница</span>
               <span class="item-catalog__price">От 1500 ₽</span>
             </p>
-            <a class="button button_more" href="#">Подробнее</a>
-            <button class="button button_favorite" type="button">В избранное</button>
+            <a class="button button--more" href="#">Подробнее</a>
+            <button class="button button--favorite" type="button">В избранное</button>
             <p class="item-catalog__rating-wrapper">
               <span class="visually-hidden" aria-hidden="true">&starf;&starf;&star;&star;&star;</span>
               <span class="item-catalog__rating">Рейтинг: 5,0</span>
@@ -211,7 +211,7 @@
         </ul>
         <ul class="catalog__pagination pagination-catalog">
           <li class="pagination-catalog__item">
-            <a class="pagination-catalog__link pagination-catalog__link_current">1</a>
+            <a class="pagination-catalog__link pagination-catalog__link--current">1</a>
           </li>
           <li class="pagination-catalog__item">
             <a class="pagination-catalog__link" href="#">2</a>
@@ -222,7 +222,7 @@
           <li class="pagination-catalog__item">
             <a class="pagination-catalog__link" href="#">4</a>
           </li>
-          <li class="pagination-catalog__item pagination-catalog__item_ellipsis">...</li>
+          <li class="pagination-catalog__item pagination-catalog__item--ellipsis">...</li>
           <li class="pagination-catalog__item">
             <a class="pagination-catalog__link" href="#">10</a>
           </li>
@@ -241,17 +241,17 @@
     <footer class="page-footer" data-test="footer">
       <ul class="page-footer__socials socials-footer">
         <li class="socials-footer__item">
-          <a class="socials-footer__link socials-footer__link_vk" href="https://vk.com/htmlacademy">
+          <a class="socials-footer__link socials-footer__link--vk" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
         <li class="socials-footer__item">
-          <a class="socials-footer__link socials-footer__link_telegram" href="https://t.me/htmlacademy">
+          <a class="socials-footer__link socials-footer__link--telegram" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Telegram</span>
           </a>
         </li>
         <li class="socials-footer__item">
-          <a class="socials-footer__link socials-footer__link_youtube"
+          <a class="socials-footer__link socials-footer__link--youtube"
             href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">YouTube</span>
           </a>
