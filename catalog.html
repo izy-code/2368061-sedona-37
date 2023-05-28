@@ -18,7 +18,7 @@
             <a class="nav__link" href="#">О Cедоне</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--current" title="Текущая страница">Гостиницы</a>
+            <a class="nav__link nav__link--current" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
         </ul>
         <ul class="nav__list nav__list--user">
@@ -33,7 +33,7 @@
             </a>
           </li>
           <li class="nav__item">
-            <button class="nav__button--hotel button button--color-1" type="button">ХОЧУ СЮДА!</button>
+            <button class="nav__button nav__button--hotel button" type="button">ХОЧУ СЮДА!</button>
           </li>
         </ul>
       </nav>
@@ -49,7 +49,7 @@
             </a>
           </li>
           <li class="breadcrumbs-filter__item">
-            <a class="breadcrumbs-filter__link" href="index.html">Гостиницы</a>
+            <a class="breadcrumbs-filter__link" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
         </ol>
         <form class="filter__form form-filter" action="https://echo.htmlacademy.ru/" method="post">
@@ -113,9 +113,9 @@
             </label>
           </fieldset>
           <div class="form-filter__fieldset">
-            <button class="form-filter__button form-filter__button--apply button button--type-2"
+            <button class="form-filter__button form-filter__button--apply button button--blue"
               type="submit">Применить</button>
-            <button class="form-filter__button form-filter__button--reset button button--type-4"
+            <button class="form-filter__button form-filter__button--reset button button--transp"
               type="reset">Сбросить</button>
           </div>
         </form>
@@ -154,8 +154,8 @@
               <span class="item-catalog__housing">Гостиница</span>
               <span class="item-catalog__price">От 4000 ₽</span>
             </p>
-            <a class="item-catalog__button item-catalog__button--more button button--type-1" href="#">Подробнее</a>
-            <button class="item-catalog__button item-catalog__button--favorite button button--type-2" type="button">В
+            <a class="item-catalog__button item-catalog__button--more button" href="#">Подробнее</a>
+            <button class="item-catalog__button item-catalog__button--favorite button button--blue" type="button">В
               избранное</button>
             <p class="item-catalog__rating-wrapper">
               <span class="visually-hidden" aria-hidden="true">&starf;&starf;&starf;&starf;&star;</span>
@@ -171,9 +171,9 @@
               <span class="item-catalog__housing">Гостиница</span>
               <span class="item-catalog__price">От 5000 ₽</span>
             </p>
-            <a class="item-catalog__button item-catalog__button--more button button--type-1" href="#">Подробнее</a>
+            <a class="item-catalog__button item-catalog__button--more button" href="#">Подробнее</a>
             <button
-              class="item-catalog__button item-catalog__button--favorite item-catalog__button--favorite--active button button--type-3"
+              class="item-catalog__button item-catalog__button--favorite item-catalog__button--favorite--active button button--green"
               type="button">В избранном</button>
             <p class="item-catalog__rating-wrapper">
               <span class="visually-hidden" aria-hidden="true">&starf;&starf;&starf;&starf;&star;</span>
@@ -190,8 +190,8 @@
               <span class="item-catalog__housing">Гостиница</span>
               <span class="item-catalog__price">От 2500 ₽</span>
             </p>
-            <a class="item-catalog__button item-catalog__button--more button button--type-1" href="#">Подробнее</a>
-            <button class="item-catalog__button item-catalog__button--favorite button button--type-2" type="button">В избранное</button>
+            <a class="item-catalog__button item-catalog__button--more button" href="#">Подробнее</a>
+            <button class="item-catalog__button item-catalog__button--favorite button button--blue" type="button">В избранное</button>
             <p class="item-catalog__rating-wrapper">
               <span class="visually-hidden" aria-hidden="true">&starf;&starf;&starf;&star;&star;</span>
               <span class="item-catalog__rating">Рейтинг: 6,9</span>
@@ -206,15 +206,15 @@
               <span class="item-catalog__housing">Гостиница</span>
               <span class="item-catalog__price">От 1500 ₽</span>
             </p>
-            <a class="item-catalog__button item-catalog__button--more button button--type-1" href="#">Подробнее</a>
-            <button class="item-catalog__button item-catalog__button--favorite button button--type-2" type="button">В избранное</button>
+            <a class="item-catalog__button item-catalog__button--more button" href="#">Подробнее</a>
+            <button class="item-catalog__button item-catalog__button--favorite button button--blue" type="button">В избранное</button>
             <p class="item-catalog__rating-wrapper">
               <span class="visually-hidden" aria-hidden="true">&starf;&starf;&star;&star;&star;</span>
               <span class="item-catalog__rating">Рейтинг: 5,0</span>
             </p>
           </li>
         </ul>
-        <ul class="catalog__pagination pagination-catalog">
+        <ul class="catalog__pagination pagination-catalog" aria-label="Постраничное разделение каталога гостиниц">
           <li class="pagination-catalog__item">
             <a class="pagination-catalog__link pagination-catalog__link--current">1</a>
           </li>
@@ -238,7 +238,7 @@
         <p class="subscribe__content">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="subscribe__input" type="email" name="subscribe-email" placeholder="Ваш e-mail">
-          <button class="subscribe__button button button--type-2" type="submit">Подписаться</button>
+          <button class="subscribe__button button button--blue" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
