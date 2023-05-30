@@ -122,7 +122,10 @@
         </section>
       </div>
       <section class="catalog" data-test="catalog">
-        <h2>Найдено гостиниц: 38</h2>
+        <h2 class="catalog__title">
+          Найдено гостиниц:
+          <output class="catalog__filtered-count">38</output>
+        </h2>
         <select class="catalog__select" name="select-sort" aria-label="Сортировка.">
           <option value="popular">Сначала популярные</option>
           <option value="cheap" selected>Сначала дешевые</option>
@@ -220,7 +223,7 @@
             </div>
           </li>
         </ul>
-        <ul class="catalog__pagination pagination-catalog" aria-label="Постраничное разделение каталога гостиниц.">
+        <ul class="catalog__pagination pagination-catalog" aria-label="Постраничное разделение каталога.">
           <li class="pagination-catalog__item">
             <a class="pagination-catalog__link pagination-catalog__link--current">1</a>
           </li>
