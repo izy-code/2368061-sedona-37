@@ -8,7 +8,7 @@
     <header class="page-header" data-test="header">
       <nav class="nav">
         <a class="nav__logo" href="index.html" aria-label="Главная страница.">
-          <img class="nav__img" src="#" alt="Логотип города Седона.">
+          <img class="nav__img" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип города Седона.">
         </a>
         <ul class="nav__list">
           <li class="nav__item">
@@ -124,7 +124,7 @@
       <section class="catalog" data-test="catalog">
         <h2 class="catalog__title">
           Найдено гостиниц:
-          <output class="catalog__found-count">38</output>
+          <span class="catalog__found-count">38</span>
         </h2>
         <select class="catalog__select" name="select-sort" aria-label="Сортировка.">
           <option value="popular">Сначала популярные</option>
@@ -139,7 +139,7 @@
           </li>
           <li class="button-list-catalog__item">
             <a class="catalog__button catalog__button--slideshow" href="#">
-              <span class="visually-hidden">Показать слайдер.</span>
+              <span class="visually-hidden">Показать слайд-шоу.</span>
             </a>
           </li>
           <li class="button-list-catalog__item">
@@ -155,9 +155,10 @@
               <h3 class="item-catalog__title" lang="en">Amara Resort & Spa</h3>
             </a>
             <a class="item-catalog__link item-catalog__link--img" href="#" tabindex="-1">
-              <img class="item-catalog__img" src="#" alt="Тёмно-синее звёздное небо, сквозь расщелину скал.">
+              <img class="item-catalog__img" src="images/hotels/hotel-1.jpg" width="300" height="212"
+                alt="Тёмно-синее звёздное небо, сквозь расщелину скал.">
             </a>
-            <!-- br.layout-break создаёт перенос строки только в вёрстке и не отображается в стилизации -->
+            <!-- br.layout-break создаёт перенос строки только в вёрстке и не отображается при стилизации -->
             <br class="layout-break">
             <span class="item-catalog__housing">Гостиница</span>
             <span class="item-catalog__price">От 4000&nbsp;₽</span>
@@ -175,7 +176,8 @@
               <h3 class="item-catalog__title" lang="en">Villas at Poco Diablo</h3>
             </a>
             <a class="item-catalog__link item-catalog__link--img" href="#" tabindex="-1">
-              <img class="item-catalog__img" src="#" alt="Радуга над скалистыми горами на фоне облачного неба.">
+              <img class="item-catalog__img" src="images/hotels/hotel-2.jpg" width="300" height="212"
+                alt="Радуга над скалистыми горами на фоне облачного неба.">
             </a>
             <br class="layout-break">
             <span class="item-catalog__housing">Гостиница</span>
@@ -194,7 +196,7 @@
               <h3 class="item-catalog__title" lang="en">Desert Quail Inn</h3>
             </a>
             <a class="item-catalog__link item-catalog__link--img" href="#" tabindex="-1">
-              <img class="item-catalog__img" src="#"
+              <img class="item-catalog__img" src="images/hotels/hotel-3.jpg" width="300" height="212"
                 alt="Скалистая гора, покрытая зелёной растительностью, на фоне голубого неба.">
             </a>
             <br class="layout-break">
@@ -214,7 +216,8 @@
               <h3 class="item-catalog__title" lang="en">GreenTree Inn</h3>
             </a>
             <a class="item-catalog__link item-catalog__link--img" href="#" tabindex="-1">
-              <img class="item-catalog__img" src="#" alt="Скалистая гора в оранжевом свете на фоне ночного неба.">
+              <img class="item-catalog__img" src="images/hotels/hotel-4.jpg" width="300" height="212"
+                alt="Скалистая гора в оранжевом свете на фоне ночного неба.">
             </a>
             <br class="layout-break">
             <span class="item-catalog__housing">Гостиница</span>
@@ -286,7 +289,8 @@
         </div>
       </address>
       <a class="page-footer__htmlacademy-link" href="https://htmlacademy.ru/">
-        <img class="page-footer__htmlacademy-logo" src="#" lang="en" alt="HTML Academy.">
+        <img class="page-footer__htmlacademy-logo" src="images/logo-html-academy.svg" width="115" height="33" lang="en"
+          alt="HTML Academy.">
       </a>
     </footer>
   </body>
