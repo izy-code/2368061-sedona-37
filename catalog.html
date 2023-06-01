@@ -27,7 +27,7 @@
           </li>
           <li class="nav__item">
             <a class="nav__button nav__button--favorites" href="#">
-              <span class="visually-hidden">Избранное </span>
+              <span class="visually-hidden">В избранном </span>
               <span class="nav__favorites">12</span>
               <span class="visually-hidden"> гостиниц.</span>
             </a>
@@ -49,12 +49,12 @@
             </a>
           </li>
           <li class="breadcrumbs-main__item">
-            <a class="breadcrumbs-main__link" href="catalog.html" aria-current="page">Гостиницы</a>
+            <a class="breadcrumbs-main__link" aria-current="page">Гостиницы</a>
           </li>
         </ol>
         <section class="filter" data-test="filter">
           <h2 class="visually-hidden">Фильтры подбора гостиниц.</h2>
-          <form class="filter__form form-filter" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="filter__form form-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="form-filter__fieldset">
               <legend class="form-filter__legend">Инфраструктура:</legend>
               <ul class="form-filter__list">
@@ -124,7 +124,7 @@
       <section class="catalog" data-test="catalog">
         <h2 class="catalog__title">
           Найдено гостиниц:
-          <output class="catalog__filtered-count">38</output>
+          <output class="catalog__found-count">38</output>
         </h2>
         <select class="catalog__select" name="select-sort" aria-label="Сортировка.">
           <option value="popular">Сначала популярные</option>
@@ -149,78 +149,84 @@
           </li>
         </ul>
         <ul class="catalog__list">
+          <!-- Элементы плитки не группируются div и p для свободной стилизации других видов раскладки каталога -->
           <li class="catalog__item item-catalog">
-            <a href="" class="item-catalog__link">
+            <a class="item-catalog__link" href="#">
               <h3 class="item-catalog__title" lang="en">Amara Resort & Spa</h3>
+            </a>
+            <a class="item-catalog__link item-catalog__link--img" href="#" tabindex="-1">
               <img class="item-catalog__img" src="#" alt="Тёмно-синее звёздное небо, сквозь расщелину скал.">
             </a>
-            <p class="item-catalog__price-wrapper">
-              <span class="item-catalog__housing">Гостиница</span>
-              <span class="item-catalog__price">От 4000 ₽</span>
-            </p>
-            <a class="item-catalog__button item-catalog__button--more button" href="#">Подробнее</a>
+            <!-- br.layout-break создаёт перенос строки только в вёрстке и не отображается в стилизации -->
+            <br class="layout-break">
+            <span class="item-catalog__housing">Гостиница</span>
+            <span class="item-catalog__price">От 4000&nbsp;₽</span>
+            <br class="layout-break">
+            <a class="item-catalog__button item-catalog__button--more button" href="#" tabindex="-1">Подробнее</a>
             <button class="item-catalog__button button button--control" type="button">В избранное</button>
-            <div class="item-catalog__rating-wrapper">
-              <p class="item-catalog__stars item-catalog__stars--4">
-                <span class="visually-hidden">4 звезды.</span>
-              </p>
-              <span class="item-catalog__rating">Рейтинг: 8,5</span>
-            </div>
+            <br class="layout-break">
+            <span class="item-catalog__stars item-catalog__stars--4">
+              <span class="visually-hidden">4 звезды.</span>
+            </span>
+            <span class="item-catalog__rating">Рейтинг: 8,5</span>
           </li>
           <li class="catalog__item item-catalog">
             <a class="item-catalog__link" href="#">
               <h3 class="item-catalog__title" lang="en">Villas at Poco Diablo</h3>
+            </a>
+            <a class="item-catalog__link item-catalog__link--img" href="#" tabindex="-1">
               <img class="item-catalog__img" src="#" alt="Радуга над скалистыми горами на фоне облачного неба.">
             </a>
-            <p class="item-catalog__price-wrapper">
-              <span class="item-catalog__housing">Гостиница</span>
-              <span class="item-catalog__price">От 5000 ₽</span>
-            </p>
-            <a class="item-catalog__button item-catalog__button--more button" href="#">Подробнее</a>
+            <br class="layout-break">
+            <span class="item-catalog__housing">Гостиница</span>
+            <span class="item-catalog__price">От 5000&nbsp;₽</span>
+            <br class="layout-break">
+            <a class="item-catalog__button item-catalog__button--more button" href="#" tabindex="-1">Подробнее</a>
             <button class="item-catalog__button button button--active" type="button">В избранном</button>
-            <div class="item-catalog__rating-wrapper">
-              <p class="item-catalog__stars item-catalog__stars--4">
-                <span class="visually-hidden">4 звезды.</span>
-              </p>
-              <span class="item-catalog__rating">Рейтинг: 9,2</span>
-            </div>
+            <br class="layout-break">
+            <span class="item-catalog__stars item-catalog__stars--4">
+              <span class="visually-hidden">4 звезды.</span>
+            </span>
+            <span class="item-catalog__rating">Рейтинг: 9,2</span>
           </li>
           <li class="catalog__item item-catalog">
             <a class="item-catalog__link" href="#">
               <h3 class="item-catalog__title" lang="en">Desert Quail Inn</h3>
+            </a>
+            <a class="item-catalog__link item-catalog__link--img" href="#" tabindex="-1">
               <img class="item-catalog__img" src="#"
                 alt="Скалистая гора, покрытая зелёной растительностью, на фоне голубого неба.">
             </a>
-            <p class="item-catalog__price-wrapper">
-              <span class="item-catalog__housing">Гостиница</span>
-              <span class="item-catalog__price">От 2500 ₽</span>
-            </p>
-            <a class="item-catalog__button item-catalog__button--more button" href="#">Подробнее</a>
+            <br class="layout-break">
+            <span class="item-catalog__housing">Гостиница</span>
+            <span class="item-catalog__price">От 2500&nbsp;₽</span>
+            <br class="layout-break">
+            <a class="item-catalog__button item-catalog__button--more button" href="#" tabindex="-1">Подробнее</a>
             <button class="item-catalog__button button button--control" type="button">В избранное</button>
-            <div class="item-catalog__rating-wrapper">
-              <p class="item-catalog__stars item-catalog__stars--3">
-                <span class="visually-hidden">3 звезды.</span>
-              </p>
-              <span class="item-catalog__rating">Рейтинг: 6,9</span>
-            </div>
+            <br class="layout-break">
+            <span class="item-catalog__stars item-catalog__stars--3">
+              <span class="visually-hidden">3 звезды.</span>
+            </span>
+            <span class="item-catalog__rating">Рейтинг: 6,9</span>
           </li>
           <li class="catalog__item item-catalog">
             <a class="item-catalog__link" href="#">
               <h3 class="item-catalog__title" lang="en">GreenTree Inn</h3>
+            </a>
+            <a class="item-catalog__link item-catalog__link--img" href="#" tabindex="-1">
               <img class="item-catalog__img" src="#" alt="Скалистая гора в оранжевом свете на фоне ночного неба.">
             </a>
-            <p class="item-catalog__price-wrapper">
-              <span class="item-catalog__housing">Гостиница</span>
-              <span class="item-catalog__price">От 1500 ₽</span>
-            </p>
-            <a class="item-catalog__button item-catalog__button--more button" href="#">Подробнее</a>
+            <br class="layout-break">
+            <span class="item-catalog__housing">Гостиница</span>
+            <span class="item-catalog__price">От 1500&nbsp;₽</span>
+            <br class="layout-break">
+            <a class="item-catalog__button item-catalog__button--more button" href="#" tabindex="-1">Подробнее</a>
             <button class="item-catalog__button button button--control" type="button">В избранное</button>
-            <div class="item-catalog__rating-wrapper">
-              <p class="item-catalog__stars item-catalog__stars--2">
-                <span class="visually-hidden">2 звезды.</span>
-              </p>
-              <span class="item-catalog__rating">Рейтинг: 5,0</span>
-            </div>
+            <br class="layout-break">
+            <span class="item-catalog__stars item-catalog__stars--2">
+              <span class="visually-hidden">2 звезды.</span>
+            </span>
+            <span class="item-catalog__rating">Рейтинг: 5,0</span>
           </li>
         </ul>
         <ul class="catalog__pagination pagination-catalog" aria-label="Постраничное разделение каталога.">
@@ -244,7 +250,9 @@
       </section>
       <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
-        <p class="subscribe__content">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+        <p class="subscribe__content">
+          Только полезная информация и никакого спама,<span class="style-break"></span>честное бойскаутское!
+        </p>
         <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="subscribe__input" type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
           <button class="subscribe__button button button--control" type="submit">Подписаться</button>
@@ -273,12 +281,12 @@
           </li>
         </ul>
         <!-- Ссылка с номером окружена div для возможности добавления другой контактной информации в будущем -->
-        <div class="page-footer__phone-numbers">
+        <div class="page-footer__contacts">
           <a class="page-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </div>
       </address>
       <a class="page-footer__htmlacademy-link" href="https://htmlacademy.ru/">
-        <img class="page-footer__htmlacademy-logo" src="#" lang="en" alt="html academy.">
+        <img class="page-footer__htmlacademy-logo" src="#" lang="en" alt="HTML Academy.">
       </a>
     </footer>
   </body>

@@ -27,7 +27,7 @@
           </li>
           <li class="nav__item">
             <a class="nav__button nav__button--favorites" href="#">
-              <span class="visually-hidden">Избранное </span>
+              <span class="visually-hidden">В избранном </span>
               <span class="nav__favorites">12</span>
               <span class="visually-hidden"> гостиниц.</span>
             </a>
@@ -60,16 +60,23 @@
             <p class="item-adv__content">Все достопримечательности находятся очень близко</p>
           </li>
           <li class="advantages__item item-adv item-adv--short item-adv--semi-opaque">
-            <h3 class="item-adv__title">Красивая<br>дорога</h3>
+            <h3 class="item-adv__title">
+              <!-- span.style-break создаёт перенос строки только при подключении файла стилизации -->
+              Красивая <span class="style-break"></span>дорога
+            </h3>
             <p class="item-adv__content">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantages__item item-adv item-adv--short">
-            <h3 class="item-adv__title">Мало<br>туристов</h3>
+            <h3 class="item-adv__title">
+              Мало <span class="style-break"></span>туристов
+            </h3>
             <p class="item-adv__content">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages__item item-adv item-adv--opaque">
             <div class="item-adv--short">
-              <h3 class="item-adv__title">Там есть<br>мост дьявола</h3>
+              <h3 class="item-adv__title">
+                Там есть <span class="style-break"></span>мост дьявола
+              </h3>
               <p class="item-adv__content">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
             <img class="item-adv__img" src="#" alt="Панорама каньонов с зелёной растительностью.">
@@ -82,27 +89,38 @@
         <ul class="recommend__list">
           <li class="recommend__item item-rec item-rec--housing">
             <h3 class="item-rec__title">Жильё</h3>
-            <p class="item-rec__content">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
+            <p class="item-rec__content">
+              Рекомендуем пожить <span class="style-break"></span>в настоящем мотеле, <span class="style-break"></span>
+              всё как в кино!
+            </p>
           </li>
           <li class="recommend__item item-rec item-rec--food item-rec--middle">
             <h3 class="item-rec__title">Еда</h3>
-            <p class="item-rec__content">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
+            <p class="item-rec__content">
+              Всегда заказывайте <span class="style-break"></span>топовый фирменный бургер, вы не разочаруетесь!
+            </p>
           </li>
           <li class="recommend__item item-rec item-rec--souvenirs">
             <h3 class="item-rec__title">Сувениры</h3>
-            <p class="item-rec__content">Не только китайского,<br>но и настоящего местного производства!</p>
+            <p class="item-rec__content">
+              Не только китайского, <span class="style-break"></span>но и настоящего местного производства!
+            </p>
           </li>
         </ul>
       </section>
       <section class="search" data-test="search">
         <h2 class="search__title">Заинтересовались?</h2>
-        <p class="search__content">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц
-          в Седоне</p>
+        <p class="search__content">
+          Укажите предполагаемые даты поездки, <span class="style-break"></span>
+          и мы покажем вам лучшие предложения гостиниц в Седоне
+        </p>
         <button class="search__button button" type="button">Поиск гостиницы в Седоне</button>
       </section>
       <section class="subscribe subscribe--background" data-test="subscribe">
         <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
-        <p class="subscribe__content">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+        <p class="subscribe__content">
+          Только полезная информация и никакого спама, <span class="style-break"></span>честное бойскаутское!
+        </p>
         <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="subscribe__input subscribe__input--background" type="email" name="subscribe-email"
             placeholder="Ваш e-mail" required>
@@ -132,12 +150,12 @@
           </li>
         </ul>
         <!-- Ссылка с номером окружена div для возможности добавления другой контактной информации в будущем -->
-        <div class="page-footer__phone-numbers">
+        <div class="page-footer__contacts">
           <a class="page-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </div>
       </address>
       <a class="page-footer__htmlacademy-link" href="https://htmlacademy.ru/">
-        <img class="page-footer__htmlacademy-logo" src="#" lang="en" alt="html academy.">
+        <img class="page-footer__htmlacademy-logo" src="#" lang="en" alt="HTML Academy.">
       </a>
     </footer>
   </body>
