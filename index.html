@@ -8,11 +8,11 @@
     <header class="page-header" data-test="header">
       <nav class="nav">
         <a class="nav__logo" href="index.html" aria-current="page">
-          <img class="nav__img" src="#" alt="Логотип города Седона.">
+          <img class="page-header__logo" src="#" alt="Логотип города Седона.">
         </a>
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link nav__link--current" href="index.html" aria-current="page">Главная</a>
+            <a class="nav__link nav__link--current" aria-current="page">Главная</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#">О Cедоне</a>
@@ -21,21 +21,20 @@
             <a class="nav__link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="nav__list nav__list--user">
-          <li class="nav__item">
-            <button class="nav__button" type="button">Поиск</button>
-          </li>
-          <li class="nav__item">
-            <a class="nav__button nav__button--favorites" href="#">
-              <span class="visually-hidden">В избранном </span>
-              <span class="nav__favorites">12</span>
-              <span class="visually-hidden"> гостиниц.</span>
+        <ul class="nav__user">
+          <li class="nav__user-item">
+            <a class="nav__user-link" href="#">
+              <span class="visually-hidden">Поиск.</span>
             </a>
           </li>
-          <li class="nav__item">
-            <button class="nav__button nav__button--hotel button" type="button">Хочу сюда!</button>
+          <li class="nav__user-item">
+            <a class="nav__user-link nav__user-link--favorite" href="#">
+              <span class="visually-hidden">Гостиниц в избранном: </span>
+              <span class="nav__favorites">12</span>
+            </a>
           </li>
         </ul>
+        <a class="button nav__button" href="#">Хочу сюда!</a>
       </nav>
     </header>
 
@@ -46,104 +45,86 @@
       </section>
       <section class="advantages" data-test="advantages">
         <h2 class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="advantages__content">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <p class="advantages__text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages__list">
-          <li class="advantages__item item-adv item-adv--opaque">
-            <div class="item-adv--short">
-              <h3 class="item-adv__title">Настоящий городок</h3>
-              <p class="item-adv__content">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <li class="tile tile--opaque advantages__item">
+            <div class="tile--short">
+              <h3 class="tile__title">Настоящий городок</h3>
+              <p class="tile__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img class="item-adv__img" src="#" alt="Малоэтажные здания с флагами и цветущие деревья.">
+            <img class="tile__img" src="#" alt="Малоэтажные здания с флагами и цветущие деревья.">
           </li>
-          <li class="advantages__item item-adv item-adv--short">
-            <h3 class="item-adv__title">Небольшая площадь</h3>
-            <p class="item-adv__content">Все достопримечательности находятся очень близко</p>
+          <li class="tile tile--short advantages__item">
+            <h3 class="tile__title">Небольшая площадь</h3>
+            <p class="tile__text">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="advantages__item item-adv item-adv--short item-adv--semi-opaque">
-            <h3 class="item-adv__title">
-              <!-- span.style-break создаёт перенос строки только при подключении файла стилизации -->
-              Красивая <span class="style-break"></span>дорога
-            </h3>
-            <p class="item-adv__content">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <li class="tile tile--short tile--semi-opaque advantages__item">
+            <h3 class="tile__title">Красивая<br>дорога</h3>
+            <p class="tile__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="advantages__item item-adv item-adv--short">
-            <h3 class="item-adv__title">
-              Мало <span class="style-break"></span>туристов
-            </h3>
-            <p class="item-adv__content">Большинство едет в Гранд Каньон и толпится там</p>
+          <li class="tile tile--short advantages__item">
+            <h3 class="tile__title">Мало<br>туристов</h3>
+            <p class="tile__text">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="advantages__item item-adv item-adv--opaque">
-            <div class="item-adv--short">
-              <h3 class="item-adv__title">
-                Там есть <span class="style-break"></span>мост дьявола
-              </h3>
-              <p class="item-adv__content">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <li class="tile tile--opaque advantages__item">
+            <div class="tile--short">
+              <h3 class="tile__title">Там есть<br>мост дьявола</h3>
+              <p class="tile__text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
-            <img class="item-adv__img" src="#" alt="Панорама каньонов с зелёной растительностью.">
+            <img class="tile__img" src="#" alt="Панорама каньонов с зелёной растительностью.">
           </li>
         </ul>
       </section>
       <section class="recommend">
         <h2 class="recommend__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-        <p class="recommend__content">Опытный персонал и качественное обслуживание!</p>
+        <p class="recommend__text">Опытный персонал и качественное обслуживание!</p>
         <ul class="recommend__list">
-          <li class="recommend__item item-rec item-rec--housing">
-            <h3 class="item-rec__title">Жильё</h3>
-            <p class="item-rec__content">
-              Рекомендуем пожить <span class="style-break"></span>в настоящем мотеле, <span class="style-break"></span>
-              всё как в кино!
-            </p>
+          <li class="tile tile--housing recommend__item">
+            <h3 class="tile__title">Жильё</h3>
+            <p class="tile__text">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
           </li>
-          <li class="recommend__item item-rec item-rec--food item-rec--middle">
-            <h3 class="item-rec__title">Еда</h3>
-            <p class="item-rec__content">
-              Всегда заказывайте <span class="style-break"></span>топовый фирменный бургер, вы не разочаруетесь!
-            </p>
+          <li class="tile tile--food tile--middle recommend__item">
+            <h3 class="tile__title">Еда</h3>
+            <p class="tile__text">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="recommend__item item-rec item-rec--souvenirs">
-            <h3 class="item-rec__title">Сувениры</h3>
-            <p class="item-rec__content">
-              Не только китайского, <span class="style-break"></span>но и настоящего местного производства!
-            </p>
+          <li class="tile tile--souvenirs recommend__item">
+            <h3 class="tile__title">Сувениры</h3>
+            <p class="tile__text">Не только китайского,<br>но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
       <section class="search" data-test="search">
         <h2 class="search__title">Заинтересовались?</h2>
-        <p class="search__content">
-          Укажите предполагаемые даты поездки, <span class="style-break"></span>
-          и мы покажем вам лучшие предложения гостиниц в Седоне
-        </p>
-        <button class="search__button button" type="button">Поиск гостиницы в Седоне</button>
+        <p class="search__text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц
+          в Седоне</p>
+        <button class="button search__button" type="button">Поиск гостиницы в Седоне</button>
       </section>
       <section class="subscribe subscribe--background" data-test="subscribe">
         <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
-        <p class="subscribe__content">
-          Только полезная информация и никакого спама, <span class="style-break"></span>честное бойскаутское!
-        </p>
+        <p class="subscribe__text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="subscribe__input subscribe__input--background" type="email" name="subscribe-email"
             placeholder="Ваш e-mail" required>
-          <button class="subscribe__button button button--control" type="submit">Подписаться</button>
+          <button class="button button--util subscribe__button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
 
     <footer class="page-footer" data-test="footer">
       <address class="page-footer__address">
-        <ul class="page-footer__socials socials-footer">
-          <li class="socials-footer__item">
-            <a class="socials-footer__link socials-footer__link--vk" href="https://vk.com/htmlacademy">
+        <ul class="page-footer__socials">
+          <li class="page-footer__socials-item">
+            <a class="page-footer__socials-link page-footer__socials-link--vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте.</span>
             </a>
           </li>
-          <li class="socials-footer__item">
-            <a class="socials-footer__link socials-footer__link--telegram" href="https://t.me/htmlacademy">
+          <li class="page-footer__socials-item">
+            <a class="page-footer__socials-link page-footer__socials-link--telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм.</span>
             </a>
           </li>
-          <li class="socials-footer__item">
-            <a class="socials-footer__link socials-footer__link--youtube"
+          <li class="page-footer__socials-item">
+            <a class="page-footer__socials-link page-footer__socials-link--youtube"
               href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden" lang="en">YouTube.</span>
             </a>
@@ -154,8 +135,8 @@
           <a class="page-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </div>
       </address>
-      <a class="page-footer__htmlacademy-link" href="https://htmlacademy.ru/">
-        <img class="page-footer__htmlacademy-logo" src="#" lang="en" alt="HTML Academy.">
+      <a class="page-footer__academy-link" href="https://htmlacademy.ru/">
+        <img class="page-footer__academy-logo" src="#" lang="en" alt="HTML Academy.">
       </a>
     </footer>
   </body>
