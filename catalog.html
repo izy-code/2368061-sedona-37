@@ -8,7 +8,8 @@
     <header class="page-header" data-test="header">
       <nav class="nav">
         <a class="nav__logo" href="index.html" aria-label="Главная страница.">
-          <img class="page-header__logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип города Седона.">
+          <img class="nav__img" src="images/logo-sedona.svg" width="140" height="70"
+            alt="Логотип города Седона.">
         </a>
         <ul class="nav__list">
           <li class="nav__item">
@@ -135,7 +136,7 @@
           </li>
           <li class="catalog__group-type">
             <a class="catalog__group-list" href="#">
-              <span class="visually-hidden">Группировать списком.</span>
+              <span class="visually-hidden">Группировать в список.</span>
             </a>
           </li>
         </ul>
@@ -144,13 +145,13 @@
             <a class="hotel__link-title" href="#">
               <h3 class="hotel__title" lang="en">Amara Resort & Spa</h3>
             </a>
-            <a class="hotel__link-img" href="#" tabindex="-1">
+            <a class="hotel__link-img" href="#">
               <img class="hotel__img" src="images/hotels/hotel-1.jpg" width="300" height="212"
                 alt="Тёмно-синее звёздное небо, сквозь расщелину скал.">
             </a>
             <p class="hotel__housing">Гостиница</p>
             <p class="hotel__price">От 4000&nbsp;₽</p>
-            <a class="button hotel__link-more" href="#" tabindex="-1">Подробнее</a>
+            <a class="button hotel__button-more" href="#">Подробнее</a>
             <button class="button button--util hotel__button-favor" type="button">В избранное</button>
             <p class="hotel__stars hotel__stars--4">
               <span class="visually-hidden">Четыре звезды из пяти.</span>
@@ -161,13 +162,13 @@
             <a class="hotel__link-title" href="#">
               <h3 class="hotel__title" lang="en">Villas at Poco Diablo</h3>
             </a>
-            <a class="hotel__link-img" href="#" tabindex="-1">
+            <a class="hotel__link-img" href="#">
               <img class="hotel__img" src="images/hotels/hotel-2.jpg" width="300" height="212"
                 alt="Радуга над скалистыми горами на фоне облачного неба.">
             </a>
             <p class="hotel__housing">Гостиница</p>
             <p class="hotel__price">От 5000&nbsp;₽</p>
-            <a class="button hotel__link-more" href="#" tabindex="-1">Подробнее</a>
+            <a class="button hotel__button-more" href="#">Подробнее</a>
             <button class="button button--active hotel__button-favor" type="button">В избранном</button>
             <p class="hotel__stars hotel__stars--4">
               <span class="visually-hidden">Четыре звезды из пяти.</span>
@@ -178,13 +179,13 @@
             <a class="hotel__link-title" href="#">
               <h3 class="hotel__title" lang="en">Desert Quail Inn</h3>
             </a>
-            <a class="hotel__link-img" href="#" tabindex="-1">
+            <a class="hotel__link-img" href="#">
               <img class="hotel__img" src="images/hotels/hotel-3.jpg" width="300" height="212"
                 alt="Скалистая гора, покрытая зелёной растительностью, на фоне голубого неба.">
             </a>
             <p class="hotel__housing">Гостиница</p>
             <p class="hotel__price">От 2500&nbsp;₽</p>
-            <a class="button hotel__link-more" href="#" tabindex="-1">Подробнее</a>
+            <a class="button hotel__button-more" href="#">Подробнее</a>
             <button class="button button--util hotel__button-favor" type="button">В избранное</button>
             <p class="hotel__stars hotel__stars--3">
               <span class="visually-hidden">Три звезды из пяти.</span>
@@ -195,13 +196,13 @@
             <a class="hotel__link-title" href="#">
               <h3 class="hotel__title" lang="en">GreenTree Inn</h3>
             </a>
-            <a class="hotel__link-img" href="#" tabindex="-1">
+            <a class="hotel__link-img" href="#">
               <img class="hotel__img" src="images/hotels/hotel-4.jpg" width="300" height="212"
                 alt="Скалистая гора в оранжевом свете на фоне ночного неба.">
             </a>
             <p class="hotel__housing">Гостиница</p>
             <p class="hotel__price">От 1500&nbsp;₽</p>
-            <a class="button hotel__link-more" href="#" tabindex="-1">Подробнее</a>
+            <a class="button hotel__button-more" href="#">Подробнее</a>
             <button class="button button--util hotel__button-favor" type="button">В избранное</button>
             <p class="hotel__stars hotel__stars--2">
               <span class="visually-hidden">Две звезды из пяти.</span>
@@ -240,29 +241,26 @@
     </main>
 
     <footer class="page-footer" data-test="footer">
-      <address class="page-footer__address">
-        <ul class="page-footer__socials">
-          <li class="page-footer__socials-item">
-            <a class="page-footer__socials-link page-footer__socials-link--vkontakte" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">ВКонтакте.</span>
-            </a>
-          </li>
-          <li class="page-footer__socials-item">
-            <a class="page-footer__socials-link page-footer__socials-link--telegram" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Телеграм.</span>
-            </a>
-          </li>
-          <li class="page-footer__socials-item">
-            <a class="page-footer__socials-link page-footer__socials-link--youtube"
-              href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden" lang="en">YouTube.</span>
-            </a>
-          </li>
-        </ul>
-        <!-- Ссылка с номером окружена div для возможности добавления другой контактной информации в будущем -->
-        <div class="page-footer__contacts">
-          <a class="page-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </div>
+      <ul class="page-footer__socials">
+        <li class="page-footer__socials-item">
+          <a class="page-footer__socials-link page-footer__socials-link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">ВКонтакте.</span>
+          </a>
+        </li>
+        <li class="page-footer__socials-item">
+          <a class="page-footer__socials-link page-footer__socials-link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм.</span>
+          </a>
+        </li>
+        <li class="page-footer__socials-item">
+          <a class="page-footer__socials-link page-footer__socials-link--youtube"
+            href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden" lang="en">YouTube.</span>
+          </a>
+        </li>
+      </ul>
+      <address class="page-footer__contacts">
+        <a class="page-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
       <a class="page-footer__academy-link" href="https://htmlacademy.ru/">
         <img class="page-footer__academy-logo" src="images/logo-html-academy.svg" width="115" height="33" lang="en"
