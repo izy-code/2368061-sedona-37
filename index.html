@@ -8,7 +8,8 @@
     <header class="page-header" data-test="header">
       <nav class="nav">
         <a class="nav__logo" href="index.html" aria-current="page">
-          <img class="page-header__logo" src="#" alt="Логотип города Седона.">
+          <img class="nav__img" src="images/logo-sedona.svg" width="140" height="70"
+            alt="Логотип города Седона.">
         </a>
         <ul class="nav__list">
           <li class="nav__item">
@@ -41,7 +42,8 @@
     <main class="main-index" data-test="main">
       <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Откройте для себя Седону и найдите лучшие гостиницы города здесь!</h1>
-        <img class="hero__img" src="#" alt="Добро пожаловать в прекрасную Седону, потому что Гранд-Каньон — отстой!">
+        <img class="hero__img" src="images/hero-welcome.svg" width="458" height="352"
+          alt="Добро пожаловать в прекрасную Седону, потому что Гранд-Каньон — отстой!">
       </section>
       <section class="advantages" data-test="advantages">
         <h2 class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -52,7 +54,8 @@
               <h3 class="tile__title">Настоящий городок</h3>
               <p class="tile__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img class="tile__img" src="#" alt="Малоэтажные здания с флагами и цветущие деревья.">
+            <img class="tile__img" src="images/advantages-streets.jpg" width="800" height="385"
+              alt="Малоэтажные здания с флагами и цветущие деревья.">
           </li>
           <li class="tile tile--short advantages__item">
             <h3 class="tile__title">Небольшая площадь</h3>
@@ -71,7 +74,8 @@
               <h3 class="tile__title">Там есть<br>мост дьявола</h3>
               <p class="tile__text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
-            <img class="tile__img" src="#" alt="Панорама каньонов с зелёной растительностью.">
+            <img class="tile__img" src="images/advantages-bridge.jpg" width="800" height="385"
+              alt="Панорама каньонов с зелёной растительностью.">
           </li>
         </ul>
       </section>
@@ -111,32 +115,30 @@
     </main>
 
     <footer class="page-footer" data-test="footer">
-      <address class="page-footer__address">
-        <ul class="page-footer__socials">
-          <li class="page-footer__socials-item">
-            <a class="page-footer__socials-link page-footer__socials-link--vkontakte" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">ВКонтакте.</span>
-            </a>
-          </li>
-          <li class="page-footer__socials-item">
-            <a class="page-footer__socials-link page-footer__socials-link--telegram" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Телеграм.</span>
-            </a>
-          </li>
-          <li class="page-footer__socials-item">
-            <a class="page-footer__socials-link page-footer__socials-link--youtube"
-              href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden" lang="en">YouTube.</span>
-            </a>
-          </li>
-        </ul>
-        <!-- Ссылка с номером окружена div для возможности добавления другой контактной информации в будущем -->
-        <div class="page-footer__contacts">
-          <a class="page-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </div>
+      <ul class="page-footer__socials">
+        <li class="page-footer__socials-item">
+          <a class="page-footer__socials-link page-footer__socials-link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">ВКонтакте.</span>
+          </a>
+        </li>
+        <li class="page-footer__socials-item">
+          <a class="page-footer__socials-link page-footer__socials-link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм.</span>
+          </a>
+        </li>
+        <li class="page-footer__socials-item">
+          <a class="page-footer__socials-link page-footer__socials-link--youtube"
+            href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden" lang="en">YouTube.</span>
+          </a>
+        </li>
+      </ul>
+      <address class="page-footer__contacts">
+        <a class="page-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
       <a class="page-footer__academy-link" href="https://htmlacademy.ru/">
-        <img class="page-footer__academy-logo" src="#" lang="en" alt="HTML Academy.">
+        <img class="page-footer__academy-logo" src="images/logo-html-academy.svg" width="115" height="33" lang="en"
+          alt="HTML Academy.">
       </a>
     </footer>
   </body>
