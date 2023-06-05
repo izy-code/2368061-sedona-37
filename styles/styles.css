@@ -108,7 +108,7 @@ img {
   text-align: center;
 }
 
-.main__heading {
+.main__subhead {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -177,7 +177,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.subscribe--background .main__heading {
+.subscribe--background .main__subhead {
   color: #ffffff;
 }
 
