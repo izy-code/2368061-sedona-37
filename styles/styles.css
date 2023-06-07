@@ -26,7 +26,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 img {
@@ -51,6 +51,7 @@ img {
 /* Header */
 .page-header {
   color: #000000;
+  background-color: #ffffff;
 }
 
 .nav__link {
@@ -106,6 +107,7 @@ img {
 /* Index main */
 .main-index {
   text-align: center;
+  background-color: #ffffff;
 }
 
 .main__subhead {
@@ -198,6 +200,10 @@ img {
 }
 
 /* Footer */
+.page-footer {
+  background-color: #ffffff;
+}
+
 .page-footer__contacts {
   font-style: normal;
   font-size: 40px;
@@ -211,6 +217,10 @@ img {
 }
 
 /* Catalog main */
+.main-catalog {
+  background-color: #ffffff;
+}
+
 .main__container {
   color: #ffffff;
   background-color: #708ea1;
