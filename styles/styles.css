@@ -58,7 +58,7 @@ img {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  text-align: center;
+  white-space: nowrap;
   text-decoration: none;
   text-transform: capitalize;
   color: #000000;
@@ -128,8 +128,8 @@ img {
   color: #ffffff;
   background-color: #708ea1;
   background-image: url("../images/hero-divider.svg"), url("../images/background-hero.jpg");
-  background-size: 100% auto;
-  background-position: bottom;
+  background-size: 100% auto, cover;
+  background-position: bottom, center;
   background-repeat: no-repeat;
 }
 
@@ -171,11 +171,16 @@ img {
 }
 
 /* Subscribe */
+.subscribe {
+  text-align: center;
+}
+
 .subscribe--background {
   color: #ffffff;
   background-color: #708ea1;
   background-image: url("../images/background-subscribe.jpg");
-  background-size: 100% auto;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -211,7 +216,8 @@ img {
   color: #000000;
 }
 
-.page-footer__phone {
+.page-footer__contacts-item {
+  display: block;
   text-decoration: none;
   color: #000000;
 }
@@ -225,7 +231,8 @@ img {
   color: #ffffff;
   background-color: #708ea1;
   background-image: url("../images/background-filter.jpg");
-  background-size: 100% auto;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
