@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header" data-test="header">
       <nav class="nav">
         <a class="nav__logo" href="index.html" aria-current="page">
-          <img class="nav__img" src="images/logo-sedona.svg" width="140" height="70"
-            alt="Логотип города Седона.">
+          <img class="nav__img" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип города Седона.">
         </a>
         <ul class="nav__list">
           <li class="nav__item">
@@ -25,7 +25,7 @@
         <ul class="nav__user">
           <li class="nav__user-item">
             <a class="nav__user-link" href="#">
-              <span class="visually-hidden">Поиск.</span>
+              <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="nav__user-item">
@@ -46,8 +46,8 @@
           alt="Добро пожаловать в прекрасную Седону, потому что Гранд-Каньон — отстой!">
       </section>
       <section class="advantages" data-test="advantages">
-        <h2 class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="advantages__text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <h2 class="main__subhead advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="main__text advantages__text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages__list">
           <li class="tile tile--opaque advantages__item">
             <div class="tile--short">
@@ -80,8 +80,8 @@
         </ul>
       </section>
       <section class="recommend">
-        <h2 class="recommend__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-        <p class="recommend__text">Опытный персонал и качественное обслуживание!</p>
+        <h2 class="main__subhead recommend__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <p class="main__text recommend__text">Опытный персонал и качественное обслуживание!</p>
         <ul class="recommend__list">
           <li class="tile tile--housing recommend__item">
             <h3 class="tile__title">Жильё</h3>
@@ -98,17 +98,19 @@
         </ul>
       </section>
       <section class="search" data-test="search">
-        <h2 class="search__title">Заинтересовались?</h2>
-        <p class="search__text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц
-          в Седоне</p>
+        <h2 class="main__subhead search__title">Заинтересовались?</h2>
+        <p class="main__text search__text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
+          гостиниц в Седоне</p>
         <button class="button search__button" type="button">Поиск гостиницы в Седоне</button>
       </section>
       <section class="subscribe subscribe--background" data-test="subscribe">
-        <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
-        <p class="subscribe__text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+        <h2 class="main__subhead subscribe__title">Подпишитесь на рассылку</h2>
+        <p class="main__text subscribe__text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="subscribe__input subscribe__input--background" type="email" name="subscribe-email"
-            placeholder="Ваш e-mail" required>
+          <label class="subscribe__label">
+            <span class="visually-hidden">Укажите ваш e-mail</span>
+            <input class="subscribe__input" type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
+          </label>
           <button class="button button--util subscribe__button" type="submit">Подписаться</button>
         </form>
       </section>
@@ -118,23 +120,23 @@
       <ul class="page-footer__socials">
         <li class="page-footer__socials-item">
           <a class="page-footer__socials-link page-footer__socials-link--vkontakte" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">ВКонтакте.</span>
+            <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
         <li class="page-footer__socials-item">
           <a class="page-footer__socials-link page-footer__socials-link--telegram" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграм.</span>
+            <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
         <li class="page-footer__socials-item">
           <a class="page-footer__socials-link page-footer__socials-link--youtube"
             href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden" lang="en">YouTube.</span>
+            <span class="visually-hidden" lang="en">YouTube</span>
           </a>
         </li>
       </ul>
       <address class="page-footer__contacts">
-        <a class="page-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="page-footer__contacts-item" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
       <a class="page-footer__academy-link" href="https://htmlacademy.ru/">
         <img class="page-footer__academy-logo" src="images/logo-html-academy.svg" width="115" height="33" lang="en"

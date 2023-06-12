@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header" data-test="header">
       <nav class="nav">
-        <a class="nav__logo" href="index.html" aria-label="Главная страница.">
-          <img class="nav__img" src="images/logo-sedona.svg" width="140" height="70"
-            alt="Логотип города Седона.">
+        <a class="nav__logo" href="index.html" aria-label="Главная страница">
+          <img class="nav__img" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип города Седона.">
         </a>
         <ul class="nav__list">
           <li class="nav__item">
@@ -25,7 +25,7 @@
         <ul class="nav__user">
           <li class="nav__user-item">
             <a class="nav__user-link" href="#">
-              <span class="visually-hidden">Поиск.</span>
+              <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="nav__user-item">
@@ -45,7 +45,7 @@
         <ol class="main__breadcrumbs">
           <li class="main__breadcrumbs-item">
             <a class="main__breadcrumbs-link main__breadcrumbs-link--index" href="index.html">
-              <span class="visually-hidden">Главная.</span>
+              <span class="visually-hidden">Главная</span>
             </a>
           </li>
           <li class="main__breadcrumbs-item">
@@ -53,7 +53,7 @@
           </li>
         </ol>
         <section class="filter" data-test="filter">
-          <h2 class="visually-hidden">Фильтры подбора гостиниц.</h2>
+          <h2 class="visually-hidden">Фильтры подбора гостиниц</h2>
           <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter__form-fieldset">
               <legend class="filter__form-legend">Инфраструктура:</legend>
@@ -115,26 +115,26 @@
         </section>
       </div>
       <section class="catalog" data-test="catalog">
-        <h2 class="catalog__title">Найдено гостиниц: 38</h2>
-        <select class="catalog__select" name="select-sort" aria-label="Сортировка.">
-          <option value="popular">Сначала популярные</option>
-          <option value="cheap" selected>Сначала дешевые</option>
-          <option value="expensive">Сначала дорогие</option>
+        <h2 class="main__subhead catalog__title">Найдено гостиниц: 38</h2>
+        <select class="catalog__select" name="select-sort" aria-label="Сортировка">
+          <option class="catalog__option" value="popular">Сначала популярные</option>
+          <option class="catalog__option" value="cheap" selected>Сначала дешевые</option>
+          <option class="catalog__option" value="expensive">Сначала дорогие</option>
         </select>
         <ul class="catalog__group">
           <li class="catalog__group-type catalog__group-type--active">
             <a class="catalog__group-cards" href="#">
-              <span class="visually-hidden">Группировать в карточки.</span>
+              <span class="visually-hidden">Группировать в карточки</span>
             </a>
           </li>
           <li class="catalog__group-type">
             <a class="catalog__group-slideshow" href="#">
-              <span class="visually-hidden">Группировать в слайд-шоу.</span>
+              <span class="visually-hidden">Группировать в слайд-шоу</span>
             </a>
           </li>
           <li class="catalog__group-type">
             <a class="catalog__group-list" href="#">
-              <span class="visually-hidden">Группировать в список.</span>
+              <span class="visually-hidden">Группировать в список</span>
             </a>
           </li>
         </ul>
@@ -152,7 +152,7 @@
             <a class="button hotel__button-more" href="#">Подробнее</a>
             <button class="button button--util hotel__button-favor" type="button">В избранное</button>
             <p class="hotel__stars hotel__stars--4">
-              <span class="visually-hidden">Четыре звезды из пяти.</span>
+              <span class="visually-hidden">Четыре звезды из пяти</span>
             </p>
             <p class="hotel__rating">Рейтинг: 8,5</p>
           </li>
@@ -169,7 +169,7 @@
             <a class="button hotel__button-more" href="#">Подробнее</a>
             <button class="button button--active hotel__button-favor" type="button">В избранном</button>
             <p class="hotel__stars hotel__stars--4">
-              <span class="visually-hidden">Четыре звезды из пяти.</span>
+              <span class="visually-hidden">Четыре звезды из пяти</span>
             </p>
             <p class="hotel__rating">Рейтинг: 9,2</p>
           </li>
@@ -186,7 +186,7 @@
             <a class="button hotel__button-more" href="#">Подробнее</a>
             <button class="button button--util hotel__button-favor" type="button">В избранное</button>
             <p class="hotel__stars hotel__stars--3">
-              <span class="visually-hidden">Три звезды из пяти.</span>
+              <span class="visually-hidden">Три звезды из пяти</span>
             </p>
             <p class="hotel__rating">Рейтинг: 6,9</p>
           </li>
@@ -203,12 +203,12 @@
             <a class="button hotel__button-more" href="#">Подробнее</a>
             <button class="button button--util hotel__button-favor" type="button">В избранное</button>
             <p class="hotel__stars hotel__stars--2">
-              <span class="visually-hidden">Две звезды из пяти.</span>
+              <span class="visually-hidden">Две звезды из пяти</span>
             </p>
             <p class="hotel__rating">Рейтинг: 5,0</p>
           </li>
         </ul>
-        <ul class="catalog__pagination" aria-label="Постраничное разделение каталога.">
+        <ul class="catalog__pagination" aria-label="Постраничное разделение каталога">
           <li class="catalog__pagination-item">
             <a class="button button--util catalog__pagination-link catalog__pagination-link--current"
               aria-current="page">1</a>
@@ -229,10 +229,13 @@
         </ul>
       </section>
       <section class="subscribe" data-test="subscribe">
-        <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
-        <p class="subscribe__text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+        <h2 class="main__subhead subscribe__title">Подпишитесь на рассылку</h2>
+        <p class="main__text subscribe__text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="subscribe__input" type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
+          <label class="subscribe__label">
+            <span class="visually-hidden">Укажите ваш e-mail</span>
+            <input class="subscribe__input" type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
+          </label>
           <button class="button button--util subscribe__button" type="submit">Подписаться</button>
         </form>
       </section>
@@ -242,23 +245,23 @@
       <ul class="page-footer__socials">
         <li class="page-footer__socials-item">
           <a class="page-footer__socials-link page-footer__socials-link--vkontakte" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">ВКонтакте.</span>
+            <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
         <li class="page-footer__socials-item">
           <a class="page-footer__socials-link page-footer__socials-link--telegram" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграм.</span>
+            <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
         <li class="page-footer__socials-item">
           <a class="page-footer__socials-link page-footer__socials-link--youtube"
             href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden" lang="en">YouTube.</span>
+            <span class="visually-hidden" lang="en">YouTube</span>
           </a>
         </li>
       </ul>
       <address class="page-footer__contacts">
-        <a class="page-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="page-footer__contacts-item" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
       <a class="page-footer__academy-link" href="https://htmlacademy.ru/">
         <img class="page-footer__academy-logo" src="images/logo-html-academy.svg" width="115" height="33" lang="en"
