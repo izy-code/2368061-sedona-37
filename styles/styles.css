@@ -113,7 +113,7 @@ body {
 }
 
 .nav__user-item {
-  width: 44px;
+  min-width: 44px;
   height: 64px;
   padding: 4px;
 }
@@ -124,13 +124,16 @@ body {
 }
 
 .nav__user-link--favorite {
-  position: relative;
+  display: grid;
+  grid-template-rows: 27px 1fr;
+  grid-template-columns: 16px 1fr;
+  text-decoration: none;
 }
 
 .nav__favorites {
-  position: absolute;
-  top: 7px;
-  left: 16px;
+  grid-row: 1;
+  grid-column: 2;
+  align-self: end;
   display: inline-block;
   min-width: 20px;
   padding: 5px 4px;
@@ -603,11 +606,12 @@ body {
 }
 
 .catalog__title {
+  min-width: 355px;
   margin-right: auto;
 }
 
 .catalog__sort {
-  width: 292px;
+  min-width: 292px;
   margin: 0 70px;
   padding: 14px 0 14px 20px;
   font: inherit;
