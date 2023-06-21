@@ -126,18 +126,18 @@
               <option class="catalog__option" value="expensive">Сначала дорогие</option>
             </select>
             <ul class="catalog__group">
-              <li class="catalog__group-type catalog__group-type--active">
-                <a class="catalog__group-cards" href="#">
+              <li class="catalog__group-item">
+                <a class="catalog__group-button catalog__group-button--cards catalog__group-button--active" href="#">
                   <span class="visually-hidden">Группировать в карточки</span>
                 </a>
               </li>
-              <li class="catalog__group-type">
-                <a class="catalog__group-slideshow" href="#">
+              <li class="catalog__group-item">
+                <a class="catalog__group-button catalog__group-button--slideshow" href="#">
                   <span class="visually-hidden">Группировать в слайд-шоу</span>
                 </a>
               </li>
-              <li class="catalog__group-type">
-                <a class="catalog__group-list" href="#">
+              <li class="catalog__group-item">
+                <a class="catalog__group-button catalog__group-button--list" href="#">
                   <span class="visually-hidden">Группировать в список</span>
                 </a>
               </li>
@@ -148,7 +148,7 @@
               <a class="hotel__link-title" href="#">
                 <h3 class="hotel__title" lang="en">Amara Resort & Spa</h3>
               </a>
-              <a class="hotel__link-img" href="#">
+              <a class="hotel__link-img" href="#" tabindex="-1">
                 <img class="hotel__img" src="images/hotels/hotel-1.jpg" width="300" height="212"
                   alt="Тёмно-синее звёздное небо, сквозь расщелину скал.">
               </a>
@@ -165,7 +165,7 @@
               <a class="hotel__link-title" href="#">
                 <h3 class="hotel__title" lang="en">Villas at Poco Diablo</h3>
               </a>
-              <a class="hotel__link-img" href="#">
+              <a class="hotel__link-img" href="#" tabindex="-1">
                 <img class="hotel__img" src="images/hotels/hotel-2.jpg" width="300" height="212"
                   alt="Радуга над скалистыми горами на фоне облачного неба.">
               </a>
@@ -182,7 +182,7 @@
               <a class="hotel__link-title" href="#">
                 <h3 class="hotel__title" lang="en">Desert Quail Inn</h3>
               </a>
-              <a class="hotel__link-img" href="#">
+              <a class="hotel__link-img" href="#" tabindex="-1">
                 <img class="hotel__img" src="images/hotels/hotel-3.jpg" width="300" height="212"
                   alt="Скалистая гора, покрытая зелёной растительностью, на фоне голубого неба.">
               </a>
@@ -199,7 +199,7 @@
               <a class="hotel__link-title" href="#">
                 <h3 class="hotel__title" lang="en">GreenTree Inn</h3>
               </a>
-              <a class="hotel__link-img" href="#">
+              <a class="hotel__link-img" href="#" tabindex="-1">
                 <img class="hotel__img" src="images/hotels/hotel-4.jpg" width="300" height="212"
                   alt="Скалистая гора в оранжевом свете на фоне ночного неба.">
               </a>
@@ -235,7 +235,8 @@
         </section>
         <section class="subscribe" data-test="subscribe">
           <h2 class="main__subhead subscribe__title">Подпишитесь на рассылку</h2>
-          <p class="main__text subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="main__text subscribe__text">Только полезная информация и никакого спама,
+            честное&nbsp;бойскаутское!</p>
           <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="subscribe__label">
               <span class="visually-hidden">Укажите ваш e-mail</span>
