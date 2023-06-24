@@ -25,7 +25,7 @@
           </ul>
           <ul class="nav__user">
             <li class="nav__user-item">
-              <a class="nav__user-link" href="#">
+              <a class="nav__user-link nav__user-link--search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
@@ -62,18 +62,24 @@
                 <legend class="filter__form-legend">Инфраструктура:</legend>
                 <ul class="filter__form-list">
                   <li class="filter__form-item">
-                    <label class="filter__form-label">
-                      <input class="filter__form-checkbox" type="checkbox" name="pool" checked>Бассейн
+                    <label class="check filter__form-label">
+                      <input class="check__input filter__form-check" type="checkbox" name="pool" checked>
+                      <span class="check__custom filter__form-span"></span>
+                      <span class="check__text filter__form-text">Бассейн</span>
                     </label>
                   </li>
                   <li class="filter__form-item">
-                    <label class="filter__form-label">
-                      <input class="filter__form-checkbox" type="checkbox" name="parking" checked>Парковка
+                    <label class="check filter__form-label">
+                      <input class="check__input filter__form-check" type="checkbox" name="parking" checked>
+                      <span class="check__custom filter__form-span"></span>
+                      <span class="check__text filter__form-text">Парковка</span>
                     </label>
                   </li>
                   <li class="filter__form-item">
-                    <label class="filter__form-label" lang="en">
-                      <input class="filter__form-checkbox" type="checkbox" name="wi-fi">Wi-Fi
+                    <label class="check filter__form-label" lang="en">
+                      <input class="check__input filter__form-check" type="checkbox" name="wi-fi">
+                      <span class="check__custom filter__form-span"></span>
+                      <span class="check__text filter__form-text">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -82,33 +88,42 @@
                 <legend class="filter__form-legend">Тип Жилья:</legend>
                 <ul class="filter__form-list">
                   <li class="filter__form-item">
-                    <label class="filter__form-label">
-                      <input class="filter__form-radio" type="radio" name="housing" value="hotel" checked>Гостиница
+                    <label class="radio filter__form-label">
+                      <input class="radio__input filter__form-radio" type="radio" name="housing" value="hotel"
+                        checked>
+                      <span class="radio__custom filter__form-span"></span>
+                      <span class="radio__text filter__form-text">Гостиница</span>
                     </label>
                   </li>
                   <li class="filter__form-item">
-                    <label class="filter__form-label">
-                      <input class="filter__form-radio" type="radio" name="housing" value="motel">Мотель
+                    <label class="radio filter__form-label">
+                      <input class="radio__input filter__form-radio" type="radio" name="housing" value="motel">
+                      <span class="radio__custom filter__form-span"></span>
+                      <span class="radio__text filter__form-text">Мотель</span>
                     </label>
                   </li>
                   <li class="filter__form-item">
-                    <label class="filter__form-label">
-                      <input class="filter__form-radio" type="radio" name="housing" value="apartments">Апартаменты
+                    <label class="radio filter__form-label">
+                      <input class="radio__input filter__form-radio" type="radio" name="housing" value="apartments">
+                      <span class="radio__custom filter__form-span"></span>
+                      <span class="radio__text filter__form-text">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="filter__form-fieldset filter__form-fieldset--price">
                 <legend class="filter__form-legend">Стоимость,&nbsp;₽:</legend>
-                <label class="filter__form-label filter__form-label--price">
-                  <span class="filter__form-span">от</span>
-                  <input class="filter__form-input" type="number" name="min-price" min="0" placeholder="0">
-                </label>
-                <label class="filter__form-label filter__form-label--price">
-                  <span class="filter__form-span">до</span>
-                  <input class="filter__form-input filter__form-input--max-price" type="number" name="max-price" min="0"
-                    placeholder="9000">
-                </label>
+                <div class="filter__form-price-inputs">
+                  <label class="filter__form-label filter__form-label--price">
+                    <span class="filter__form-span">от</span>
+                    <input class="filter__form-input" type="number" name="min-price" min="0" placeholder="0">
+                  </label>
+                  <label class="filter__form-label filter__form-label--price">
+                    <span class="filter__form-span">до</span>
+                    <input class="filter__form-input filter__form-input--max-price" type="number" name="max-price" min="0"
+                      placeholder="9000">
+                  </label>
+                </div>
               </fieldset>
               <div class="filter__form-buttons">
                 <button class="button button--util filter__form-button" type="submit">Применить</button>
@@ -120,11 +135,13 @@
         <section class="catalog" data-test="catalog">
           <header class="catalog__header">
             <h2 class="main__subhead catalog__title">Найдено гостиниц: 38</h2>
-            <select class="catalog__sort" name="select-sort" aria-label="Сортировка">
-              <option class="catalog__option" value="popular">Сначала популярные</option>
-              <option class="catalog__option" value="cheap" selected>Сначала дешевые</option>
-              <option class="catalog__option" value="expensive">Сначала дорогие</option>
-            </select>
+            <div class="catalog__sort-wrapper">
+              <select class="catalog__sort" name="select-sort" aria-label="Сортировка">
+                <option class="catalog__option" value="popular">Сначала популярные</option>
+                <option class="catalog__option" value="cheap" selected>Сначала дешевые</option>
+                <option class="catalog__option" value="expensive">Сначала дорогие</option>
+              </select>
+            </div>
             <ul class="catalog__group">
               <li class="catalog__group-item">
                 <a class="catalog__group-button catalog__group-button--cards catalog__group-button--active" href="#">
@@ -270,7 +287,7 @@
           <a class="page-footer__contacts-item" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
         <a class="page-footer__academy-link" href="https://htmlacademy.ru/">
-          <img class="page-footer__academy-logo" src="images/logo-html-academy.svg" width="115" height="33" lang="en"
+          <img class="page-footer__academy-logo" src="images/logo-html-academy.svg" width="115" height="34" lang="en"
             alt="HTML Academy.">
         </a>
       </footer>
