@@ -64,21 +64,18 @@
                   <li class="filter__form-item">
                     <label class="check filter__form-label">
                       <input class="check__input filter__form-check" type="checkbox" name="pool" checked>
-                      <span class="check__custom filter__form-span"></span>
                       <span class="check__text filter__form-text">Бассейн</span>
                     </label>
                   </li>
                   <li class="filter__form-item">
                     <label class="check filter__form-label">
                       <input class="check__input filter__form-check" type="checkbox" name="parking" checked>
-                      <span class="check__custom filter__form-span"></span>
                       <span class="check__text filter__form-text">Парковка</span>
                     </label>
                   </li>
                   <li class="filter__form-item">
                     <label class="check filter__form-label" lang="en">
                       <input class="check__input filter__form-check" type="checkbox" name="wi-fi">
-                      <span class="check__custom filter__form-span"></span>
                       <span class="check__text filter__form-text">Wi-Fi</span>
                     </label>
                   </li>
@@ -89,23 +86,19 @@
                 <ul class="filter__form-list">
                   <li class="filter__form-item">
                     <label class="radio filter__form-label">
-                      <input class="radio__input filter__form-radio" type="radio" name="housing" value="hotel"
-                        checked>
-                      <span class="radio__custom filter__form-span"></span>
+                      <input class="radio__input filter__form-radio" type="radio" name="housing" value="hotel" checked>
                       <span class="radio__text filter__form-text">Гостиница</span>
                     </label>
                   </li>
                   <li class="filter__form-item">
                     <label class="radio filter__form-label">
                       <input class="radio__input filter__form-radio" type="radio" name="housing" value="motel">
-                      <span class="radio__custom filter__form-span"></span>
                       <span class="radio__text filter__form-text">Мотель</span>
                     </label>
                   </li>
                   <li class="filter__form-item">
                     <label class="radio filter__form-label">
                       <input class="radio__input filter__form-radio" type="radio" name="housing" value="apartments">
-                      <span class="radio__custom filter__form-span"></span>
                       <span class="radio__text filter__form-text">Апартаменты</span>
                     </label>
                   </li>
@@ -116,12 +109,13 @@
                 <div class="filter__form-price-inputs">
                   <label class="filter__form-label filter__form-label--price">
                     <span class="filter__form-span">от</span>
-                    <input class="filter__form-input" type="number" name="min-price" min="0" placeholder="0">
+                    <input class="text-input-states filter__form-input" type="number" name="min-price" min="0"
+                      placeholder="0">
                   </label>
                   <label class="filter__form-label filter__form-label--price">
                     <span class="filter__form-span">до</span>
-                    <input class="filter__form-input filter__form-input--max-price" type="number" name="max-price" min="0"
-                      placeholder="9000">
+                    <input class="text-input-states filter__form-input filter__form-input--max-price" type="number"
+                      name="max-price" min="0" placeholder="9000">
                   </label>
                 </div>
               </fieldset>
@@ -141,6 +135,7 @@
                 <option class="catalog__option" value="cheap" selected>Сначала дешевые</option>
                 <option class="catalog__option" value="expensive">Сначала дорогие</option>
               </select>
+              <div class="catalog__sort-arrow"></div>
             </div>
             <ul class="catalog__group">
               <li class="catalog__group-item">
@@ -257,7 +252,8 @@
           <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="subscribe__label">
               <span class="visually-hidden">Укажите ваш e-mail</span>
-              <input class="subscribe__input" type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
+              <input class="text-input-states subscribe__input" type="email" name="subscribe-email"
+                placeholder="Ваш e-mail" required>
             </label>
             <button class="button button--util subscribe__button" type="submit">Подписаться</button>
           </form>
@@ -287,8 +283,7 @@
           <a class="page-footer__contacts-item" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
         <a class="page-footer__academy-link" href="https://htmlacademy.ru/">
-          <img class="page-footer__academy-logo" src="images/logo-html-academy.svg" width="115" height="34" lang="en"
-            alt="HTML Academy.">
+          <span class="visually-hidden" lang="en">HTML Academy</span>
         </a>
       </footer>
     </div>
