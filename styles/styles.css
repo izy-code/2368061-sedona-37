@@ -301,10 +301,10 @@ body {
 }
 
 .page-container .button:disabled,
-a.button:not([href]) {
+.button:not([href]):not(button) {
   color: var(--color-font-bgnd);
   background-color: var(--color-btn-disabled);
-  cursor: initial;
+  cursor: default;
 }
 
 .button--util {
@@ -334,7 +334,7 @@ a.button:not([href]) {
 }
 
 .page-container .button--reset:disabled,
-a.button--reset:not([href]) {
+.button--reset:not([href]):not(button) {
   color: var(--color-font-bgnd-disabled);
   background-color: rgba(0, 0, 0, 0);
 }
@@ -1241,7 +1241,7 @@ a.button--reset:not([href]) {
   box-shadow: inset 0 0 0 1px var(--color-brdr-pagination);
 }
 
-.page-container .catalog .catalog__pagination-link--current {
+.catalog .catalog__pagination .catalog__pagination-link--current {
   color: var(--color-font-basic);
   background-color: var(--color-bgnd-basic-dark);
   cursor: initial;
