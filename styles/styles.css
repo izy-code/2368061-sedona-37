@@ -419,6 +419,10 @@ body {
   list-style: none;
 }
 
+.advantages__item:nth-child(even of .tile) {
+  background-color: var(--color-bgnd-second-opaque-semi);
+}
+
 .advantages__item--wide {
   display: flex;
   flex-wrap: wrap;
@@ -428,14 +432,8 @@ body {
   background-color: var(--color-bgnd-second-opaque);
 }
 
-.advantages__item--wide-reverse {
+.advantages__item--wide:nth-child(even of .advantages__item--wide) {
   flex-direction: row-reverse;
-}
-
-.advantages__item-img {
-  object-fit: cover;
-  width: calc(100% * 2 / 3);
-  height: 100%;
 }
 
 /* Tile */
@@ -448,31 +446,6 @@ body {
   background-color: var(--color-bgnd-second-opaque-light);
 }
 
-.tile--semi-opaque {
-  background-color: var(--color-bgnd-second-opaque-semi);
-}
-
-.tile--transparent {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.advantages__item--wide .tile {
-  width: calc(100% / 3);
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.advantages .tile::after {
-  content: "";
-  align-self: center;
-  width: 60px;
-  margin-bottom: 30px;
-  border-bottom: 2px solid var(--color-brdr-tile);
-}
-
-.advantages__item--wide .tile::after {
-  border-color: var(--color-brdr-tile-opaque);
-}
-
 .tile__title {
   margin: 0 0 30px;
   font-size: 24px;
@@ -482,13 +455,37 @@ body {
   color: var(--color-font-basic);
 }
 
-.advantages__item--wide .tile__title {
-  color: var(--color-font-bgnd);
-}
-
 .tile__text {
   order: 1;
   margin: 0;
+}
+/* Tile ending */
+
+.advantages .tile::after {
+  content: "";
+  align-self: center;
+  width: 60px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--color-brdr-tile);
+}
+
+.advantages__item-container {
+  width: calc(100% / 3);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.advantages .advantages__item-container::after {
+  border-color: var(--color-brdr-tile-opaque);
+}
+
+.advantages__item-container .tile__title {
+  color: var(--color-font-bgnd);
+}
+
+.advantages__item-img {
+  object-fit: cover;
+  width: calc(100% * 2 / 3);
+  height: 100%;
 }
 
 /* Recommendations */
@@ -504,7 +501,7 @@ body {
   margin: 0 var(--padding-index-inline) 64px;
 }
 
-.recommend .tile::before {
+.recommend__item::before {
   content: "";
   align-self: center;
   width: 76px;
@@ -513,15 +510,19 @@ body {
   background: center / contain no-repeat;
 }
 
-.recommend .tile--housing::before {
+.recommend__item:nth-child(even of .tile) {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.recommend__item--housing::before {
   background-image: url("../images/recommend-house.svg");
 }
 
-.recommend .tile--food::before {
+.recommend__item--food::before {
   background-image: url("../images/recommend-food.svg");
 }
 
-.recommend .tile--souvenirs::before {
+.recommend__item--souvenirs::before {
   background-image: url("../images/recommend-souvenir.svg");
 }
 
