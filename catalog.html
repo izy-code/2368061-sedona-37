@@ -58,7 +58,7 @@
           <section class="filter" data-test="filter">
             <h2 class="visually-hidden">Фильтры подбора гостиниц</h2>
             <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="filter__form-fieldset">
+              <fieldset class="filter__form-fieldset filter__form-fieldset--options">
                 <legend class="filter__form-legend">Инфраструктура:</legend>
                 <ul class="filter__form-list">
                   <li class="filter__form-item">
@@ -109,13 +109,12 @@
                 <div class="filter__form-price-inputs">
                   <label class="filter__form-label filter__form-label--price">
                     <span class="filter__form-span">от</span>
-                    <input class="text-input-states filter__form-input" type="number" name="min-price" min="0"
-                      placeholder="0">
+                    <input class="text-input filter__form-input" type="number" name="min-price" min="0" value="0">
                   </label>
                   <label class="filter__form-label filter__form-label--price">
                     <span class="filter__form-span">до</span>
-                    <input class="text-input-states filter__form-input filter__form-input--max-price" type="number"
-                      name="max-price" min="0" placeholder="9000">
+                    <input class="text-input filter__form-input filter__form-input--max-price" type="number"
+                      name="max-price" min="0" value="9000">
                   </label>
                 </div>
               </fieldset>
@@ -129,14 +128,11 @@
         <section class="catalog" data-test="catalog">
           <header class="catalog__header">
             <h2 class="main__subhead catalog__title">Найдено гостиниц: 38</h2>
-            <div class="catalog__sort-wrapper">
-              <select class="catalog__sort" name="select-sort" aria-label="Сортировка">
-                <option class="catalog__option" value="popular">Сначала популярные</option>
-                <option class="catalog__option" value="cheap" selected>Сначала дешевые</option>
-                <option class="catalog__option" value="expensive">Сначала дорогие</option>
-              </select>
-              <div class="catalog__sort-arrow"></div>
-            </div>
+            <select class="catalog__sort" name="select-sort" aria-label="Сортировка">
+              <option class="catalog__option" value="popular">Сначала популярные</option>
+              <option class="catalog__option" value="cheap" selected>Сначала дешевые</option>
+              <option class="catalog__option" value="expensive">Сначала дорогие</option>
+            </select>
             <ul class="catalog__group">
               <li class="catalog__group-item">
                 <a class="catalog__group-button catalog__group-button--cards catalog__group-button--active" href="#">
@@ -252,8 +248,8 @@
           <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="subscribe__label">
               <span class="visually-hidden">Укажите ваш e-mail</span>
-              <input class="text-input-states subscribe__input" type="email" name="subscribe-email"
-                placeholder="Ваш e-mail" required>
+              <input class="text-input subscribe__input" type="email" name="subscribe-email" placeholder="Ваш e-mail"
+                required>
             </label>
             <button class="button button--util subscribe__button" type="submit">Подписаться</button>
           </form>
