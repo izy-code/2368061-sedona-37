@@ -122,11 +122,11 @@ body {
 
 .nav__logo:hover .nav__img,
 .nav__logo:focus-visible .nav__img {
-  opacity: 0.6;
+  filter: sepia(100%);
 }
 
 .nav__logo:active .nav__img {
-  opacity: 0.3;
+  filter: sepia(0);
 }
 
 .nav__img {
@@ -1122,6 +1122,7 @@ body {
 .hotel__link-title {
   grid-column: span 2;
   align-self: start;
+  max-width: max-content;
   text-decoration: none;
 }
 
