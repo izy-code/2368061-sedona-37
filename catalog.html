@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -117,6 +119,18 @@
                       name="max-price" min="0" value="9000">
                   </label>
                 </div>
+                <div class="filter__form-range-scale">
+                  <div class="filter__form-range-bar" style="left: 0; width: 226px">
+                    <button class="filter__form-range-thumb filter__form-range-thumb--min" type="button"
+                      aria-hidden="true">
+                      <span class="visually-hidden">Изменить минимальную стоимость</span>
+                    </button>
+                    <button class="filter__form-range-thumb filter__form-range-thumb--max" type="button"
+                      aria-hidden="true">
+                      <span class="visually-hidden">Изменить максимальную стоимость</span>
+                    </button>
+                  </div>
+                </div>
               </fieldset>
               <div class="filter__form-buttons">
                 <button class="button button--util filter__form-button" type="submit">Применить</button>
@@ -135,7 +149,8 @@
             </select>
             <ul class="catalog__group">
               <li class="catalog__group-item">
-                <a class="catalog__group-button catalog__group-button--cards catalog__group-button--active" href="#">
+                <a class="catalog__group-button catalog__group-button--cards catalog__group-button--active"
+                  aria-current="true">
                   <span class="visually-hidden">Группировать в карточки</span>
                 </a>
               </li>
@@ -224,7 +239,7 @@
           <ul class="catalog__pagination" aria-label="Постраничное разделение каталога">
             <li class="catalog__pagination-item">
               <a class="button button--util catalog__pagination-link catalog__pagination-link--current"
-                aria-current="page">1</a>
+                aria-current="true">1</a>
             </li>
             <li class="catalog__pagination-item">
               <a class="button button--util catalog__pagination-link" href="#">2</a>
