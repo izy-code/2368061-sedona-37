@@ -760,7 +760,7 @@ body {
 }
 
 .index__modal-container--closed {
-  /* display: none; */
+  display: none;
 }
 
 .index__modal {
