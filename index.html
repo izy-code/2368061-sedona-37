@@ -25,7 +25,7 @@
           </ul>
           <ul class="nav__user">
             <li class="nav__user-item">
-              <a class="nav__user-link" href="#">
+              <a class="nav__user-link nav__user-link--search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
@@ -64,7 +64,7 @@
               <h3 class="tile__title">Небольшая площадь</h3>
               <p class="tile__text">Все достопримечательности находятся очень близко</p>
             </li>
-            <li class="tile tile--semi-opaque advantages__item">
+            <li class="tile advantages__item">
               <h3 class="tile__title">Красивая <br>дорога</h3>
               <p class="tile__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
@@ -72,7 +72,7 @@
               <h3 class="tile__title">Мало <br>туристов</h3>
               <p class="tile__text">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
-            <li class="advantages__item advantages__item--wide advantages__item--wide-reverse">
+            <li class="advantages__item advantages__item--wide">
               <div class="tile advantages__item-container">
                 <h3 class="tile__title">Там есть мост&nbsp;дьявола</h3>
                 <p class="tile__text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -83,18 +83,18 @@
           </ul>
         </section>
         <section class="recommend">
-          <h2 class="main__subhead recommend__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+          <h2 class="main__subhead recommend__title">Приезжайте в Седону отдохнуть <br>в комфорте и уюте!</h2>
           <p class="main__text recommend__text">Опытный персонал и качественное обслуживание!</p>
           <ul class="recommend__list">
-            <li class="tile tile--housing recommend__item">
+            <li class="tile recommend__item recommend__item--housing ">
               <h3 class="tile__title">Жильё</h3>
               <p class="tile__text">Рекомендуем пожить в&nbsp;настоящем мотеле, всё&nbsp;как&nbsp;в кино!</p>
             </li>
-            <li class="tile tile--food tile--transparent recommend__item">
+            <li class="tile recommend__item recommend__item--food ">
               <h3 class="tile__title">Еда</h3>
               <p class="tile__text">Всегда заказывайте топовый&nbsp;фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="tile tile--souvenirs recommend__item">
+            <li class="tile recommend__item recommend__item--souvenirs ">
               <h3 class="tile__title">Сувениры</h3>
               <p class="tile__text">Не только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
             </li>
@@ -113,7 +113,8 @@
           <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="subscribe__label">
               <span class="visually-hidden">Укажите ваш e-mail</span>
-              <input class="subscribe__input" type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
+              <input class="text-input subscribe__input" type="email" name="subscribe-email" placeholder="Ваш e-mail"
+                required>
             </label>
             <button class="button button--util subscribe__button" type="submit">Подписаться</button>
           </form>
@@ -143,8 +144,7 @@
           <a class="page-footer__contacts-item" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
         <a class="page-footer__academy-link" href="https://htmlacademy.ru/">
-          <img class="page-footer__academy-logo" src="images/logo-html-academy.svg" width="115" height="33" lang="en"
-            alt="HTML Academy.">
+          <span class="visually-hidden" lang="en">HTML Academy</span>
         </a>
       </footer>
     </div>
