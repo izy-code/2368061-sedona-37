@@ -773,6 +773,7 @@ body {
   position: absolute;
   top: 64px;
   right: 52px;
+  z-index: 1;
   display: flex;
   align-self: start;
   justify-self: end;
@@ -826,6 +827,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: var(--gap-search-form);
+  column-gap: 25px;
   align-items: center;
 }
 
@@ -845,6 +847,7 @@ body {
 .modal-search__label-text,
 .modal-search__wrapper .modal-search__label {
   width: 137px;
+  padding-right: 5px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -894,7 +897,7 @@ body {
 
 .modal-search__wrapper .modal-search__field {
   width: 31px;
-  padding: 15px 0 13px;
+  padding: 13px 0 11px;
   line-height: 20px;
   text-align: center;
   appearance: textfield;
@@ -963,25 +966,21 @@ body {
 }
 
 /* Tooltip */
-.modal-search__wrapper--children .modal-search__label-with-tooltip {
+.modal-search__label-with-tooltip {
   display: flex;
   align-items: center;
-  width: 111px;
+  min-width: 111px;
+  margin-right: 20px;
 }
 
 .modal-search__label-with-tooltip .modal-search__label {
   width: fit-content;
-  margin-right: 11px;
-}
-
-.modal-search__label-with-tooltip {
-  margin-right: 20px;
+  max-width: 113px;
+  margin-right: 6px;
 }
 
 .modal-search__tooltip {
   position: relative;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .modal-search__tooltip-toggle {
