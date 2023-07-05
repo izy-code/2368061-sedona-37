@@ -201,7 +201,7 @@ body {
 
 .nav__user-item {
   min-width: 44px;
-  height: 64px;
+  min-height: 64px;
   padding: 6px 4px;
 }
 
@@ -232,7 +232,8 @@ body {
 
 .nav__user-link--favorite::before {
   grid-area: 1 / 1 / 2 / 2;
-  margin-left: 8px;
+  align-self: end;
+  margin: 0 0 16px 8px;
   -webkit-mask-image: url("../images/icons-favorite.svg");
   mask-image: url("../images/icons-favorite.svg");
 }
@@ -253,8 +254,7 @@ body {
   grid-area: 1 / 1 / 2 / 2;
   align-self: start;
   min-width: 20px;
-  margin-top: 5px;
-  margin-left: 16px;
+  margin: 5px 0 27px 16px;
   padding: 5px 4px;
   font-size: 10px;
   line-height: 10px;
@@ -1179,6 +1179,7 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 44px;
+  width: 288px;
 }
 
 .filter__form-legend {
@@ -1294,7 +1295,6 @@ body {
 .filter__form-price-inputs {
   display: flex;
   column-gap: 2px;
-  width: 288px;
 }
 
 .filter__form-label--price {
@@ -1434,10 +1434,10 @@ body {
   flex-shrink: 0;
   flex-wrap: wrap;
   gap: 8px;
-  align-self: flex-start;
   max-width: 216px;
   margin: 0;
   padding: 0;
+  padding-bottom: 1px;
   list-style: none;
 }
 
@@ -1617,6 +1617,7 @@ body {
   justify-content: center;
   align-items: center;
   min-width: 60px;
+  max-width: 340px;
   min-height: 60px;
   padding: 12px 10px;
   font-size: 20px;
