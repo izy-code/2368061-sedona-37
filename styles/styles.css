@@ -83,6 +83,7 @@ html {
 }
 
 body {
+  min-width: 1200px;
   height: 100%;
   margin: 0;
   font-family: "PT Sans", sans-serif;
@@ -902,6 +903,8 @@ body {
 
 .modal-search__input-with-buttons {
   display: flex;
+  overflow: hidden;
+  border-radius: 4px;
 }
 
 .modal-search__wrapper .modal-search__field {
@@ -927,14 +930,6 @@ body {
   background-color: var(--color-btn-form);
   border: none;
   cursor: pointer;
-}
-
-.modal-search__button-decrease {
-  border-radius: 4px 0 0 4px;
-}
-
-.modal-search__button-increase {
-  border-radius: 0 4px 4px 0;
 }
 
 .modal-search__button-edit::after {
@@ -1107,7 +1102,7 @@ body {
 
 .main__breadcrumbs-item:not(:last-child)::after {
   content: "";
-  display: block;
+  flex-shrink: 0;
   width: 8px;
   height: 11px;
   margin: 0 5px;
@@ -1118,7 +1113,6 @@ body {
 }
 
 .main__breadcrumbs-link {
-  display: flex;
   padding: 8px 5px;
   font-size: 16px;
   text-decoration: none;
@@ -1131,6 +1125,7 @@ body {
 
 .main__breadcrumbs-link--index::before {
   content: "";
+  display: block;
   width: 13px;
   height: 15px;
   background-color: var(--color-font-bgnd);
