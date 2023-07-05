@@ -871,6 +871,7 @@ body {
 .modal-search__label--arrival .modal-search__field,
 .modal-search__label--departure .modal-search__field {
   flex-grow: 1;
+  align-self: stretch;
   padding: 13px 56px 11px 20px;
   background-image: url("../images/icons-date.svg");
   background-position: right 20px center;
