@@ -318,7 +318,7 @@ body {
 }
 
 .page-container .button:disabled,
-.button:not([href]):not(button) {
+a.button:not([href]) {
   color: var(--color-font-bgnd);
   background-color: var(--color-btn-disabled);
   cursor: default;
@@ -351,7 +351,7 @@ body {
 }
 
 .page-container .button--reset:disabled,
-.button--reset:not([href]):not(button) {
+a.button--reset:not([href]) {
   color: var(--color-font-bgnd-disabled);
   background-color: rgba(0, 0, 0, 0);
 }
@@ -442,7 +442,6 @@ body {
 
 .advantages__item--wide {
   display: flex;
-  flex-wrap: wrap;
   grid-column: span 3;
   align-items: center;
   color: var(--color-font-bgnd);
@@ -504,6 +503,7 @@ body {
   object-fit: cover;
   width: calc(100% * 2 / 3);
   height: 100%;
+  aspect-ratio: 800 / 385;
 }
 
 /* Recommendations */
@@ -835,6 +835,7 @@ body {
   --gap-search-form: 48px;
   display: grid;
   grid-template-columns: 248px 1fr;
+  grid-auto-flow: dense;
   row-gap: var(--gap-search-form);
   column-gap: 30px;
   align-items: center;
@@ -893,11 +894,20 @@ body {
 .modal-search__wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: end;
   height: 100%;
 }
 
-.modal-search__wrapper--children {
-  justify-self: end;
+.modal-search__wrapper:nth-child(odd of .modal-search__wrapper) {
+  justify-content: space-between;
+}
+
+.modal-search__wrapper--children:nth-child(odd of .modal-search__wrapper) .modal-search__label {
+  max-width: 95px;
+}
+
+.modal-search__wrapper:nth-child(odd of .modal-search__wrapper) .modal-search__label-with-tooltip {
+  margin-right: 10px;
 }
 
 .modal-search__input-with-buttons {
@@ -977,7 +987,7 @@ body {
 
 .modal-search__label-with-tooltip .modal-search__label {
   width: fit-content;
-  max-width: 118px;
+  max-width: 117px;
   margin-right: 6px;
 }
 
@@ -1176,7 +1186,7 @@ body {
 .filter__form-fieldset--price {
   display: flex;
   flex-direction: column;
-  row-gap: 44px;
+  row-gap: 28px;
   width: 288px;
 }
 
@@ -1333,7 +1343,7 @@ body {
   position: relative;
   width: 287px;
   height: 4px;
-  margin: 0 auto;
+  margin: 16px auto 8px;
   background-color: var(--color-bgnd-basic-active);
 }
 
@@ -1417,7 +1427,7 @@ body {
   appearance: none;
 }
 
-.catalog__sort:not(:disabled):hover {
+.catalog__sort:hover {
   border-color: var(--color-brdr-catalog-1-hover);
 }
 
@@ -1482,7 +1492,7 @@ body {
 /* Hotels */
 .catalog__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, 340px);
   gap: 20px;
   margin: 0;
   margin-bottom: 40px;
@@ -1506,6 +1516,8 @@ body {
   grid-column: span 2;
   align-self: start;
   max-width: max-content;
+  margin: -5px 0;
+  padding: 5px 0;
   text-decoration: none;
 }
 
@@ -1616,14 +1628,14 @@ body {
   justify-content: center;
   align-items: center;
   min-width: 60px;
-  max-width: 340px;
+  max-width: 170px;
   min-height: 60px;
   padding: 12px 10px;
   font-size: 20px;
   line-height: 36px;
 }
 
-.catalog__pagination-link:not(:disabled):not(.catalog__pagination-link--current):hover {
+.catalog__pagination-link[href]:not(.catalog__pagination-link--current):hover {
   box-shadow: inset 0 0 0 1px var(--color-brdr-pagination);
 }
 
