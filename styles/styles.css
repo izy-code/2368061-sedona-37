@@ -918,7 +918,7 @@ a.button--reset:not([href]) {
 
 .modal-search__wrapper .modal-search__field {
   width: 31px;
-  padding: 13px 0 11px;
+  padding: 13px 5px 11px;
   line-height: 20px;
   text-align: center;
   appearance: textfield;
@@ -960,7 +960,7 @@ a.button--reset:not([href]) {
 
 .modal-search__wrapper .modal-search__field:focus,
 .modal-search__button-edit:focus {
-  outline-offset: -3px;
+  outline-offset: -2px;
 }
 
 .modal-search__button-edit:not(:disabled):hover::after,
@@ -1307,13 +1307,14 @@ a.button--reset:not([href]) {
 
 .filter__form-label--price {
   display: grid;
+  align-items: center;
 }
 
 .filter__form-label--price .filter__form-span {
   z-index: 1;
   grid-area: 1 / 1 / 2 / 2;
   justify-self: end;
-  padding: 13px 20px 11px 0;
+  padding: 13px 20px 11px;
   line-height: 24px;
   color: var(--color-font-basic);
   opacity: 0.3;
@@ -1322,7 +1323,8 @@ a.button--reset:not([href]) {
 .filter__form-label--price .filter__form-input {
   grid-area: 1 / 1 / 2 / 2;
   width: 100%;
-  padding: 13px 45px 11px 20px;
+  height: 100%;
+  padding: 12px 45px 12px 20px;
   font-weight: 700;
   border-radius: 4px 0 0 4px;
   appearance: textfield;
@@ -1633,6 +1635,7 @@ a.button--reset:not([href]) {
   padding: 12px 10px;
   font-size: 20px;
   line-height: 36px;
+  text-align: center;
 }
 
 .catalog__pagination-link[href]:not(.catalog__pagination-link--current):hover {
