@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -82,7 +84,7 @@
             </li>
           </ul>
         </section>
-        <section class="recommend">
+        <section class="recommend" data-test="service">
           <h2 class="main__subhead recommend__title">Приезжайте в Седону отдохнуть <br>в комфорте и уюте!</h2>
           <p class="main__text recommend__text">Опытный персонал и качественное обслуживание!</p>
           <ul class="recommend__list">
@@ -148,5 +150,67 @@
         </a>
       </footer>
     </div>
+
+    <dialog class="modal index__modal-search" aria-labelledby="modal-search-title">
+      <button class="modal-close-button" type="button">
+        <span class="visually-hidden">Закрыть модальное окно</span>
+      </button>
+      <section class="modal-search">
+        <h2 class="modal-search__title" id="modal-search-title">Поиск гостиницы в Седоне</h2>
+        <form class="modal-search__form" action="https://echo.htmlacademy.ru/" method="get">
+          <label class="modal-search__label modal-search__label--arrival">
+            <span class="modal-search__label-text">Дата Заезда:</span>
+            <input class="text-input modal-search__field modal-search__field--error" type="text" name="date-arrival"
+              placeholder="Укажите дату" value="27 апреля 2020" required autofocus>
+            <span class="modal-search__notice" aria-live="assertive">Мы не можем отправить вас в прошлое.</span>
+          </label>
+          <label class="modal-search__label modal-search__label--departure">
+            <span class="modal-search__label-text">Дата Выезда:</span>
+            <input class="text-input modal-search__field" type="text" name="date-departure" placeholder="Укажите дату"
+              value="1 сентября 2023" required>
+            <span class="modal-search__notice" aria-live="assertive">На эти даты есть свободные номера. Пока
+              есть.</span>
+          </label>
+          <div class="modal-search__wrapper modal-search__wrapper--adults">
+            <label class="modal-search__label" for="input-adults">Взрослые:</label>
+            <span class="modal-search__input-with-buttons">
+              <button class="modal-search__button-edit modal-search__button-decrease" type="button">
+                <span class="visually-hidden">Уменьшить число взрослых на 1</span>
+              </button>
+              <input class="text-input modal-search__field" id="input-adults" type="number" name="adults"
+                placeholder="1" value="2" min="1" required>
+              <button class="modal-search__button-edit modal-search__button-increase" type="button">
+                <span class="visually-hidden">Увеличить число взрослых на 1</span>
+              </button>
+            </span>
+          </div>
+          <div class="modal-search__wrapper modal-search__wrapper--children">
+            <div class="modal-search__label-with-tooltip">
+              <label class="modal-search__label" for="input-children">Дети:</label>
+              <div class="modal-search__tooltip">
+                <button class="modal-search__tooltip-toggle" type="button" aria-labelledby="tooltip-children">
+                  <span class="visually-hidden">Подробности</span>
+                </button>
+                <span class="modal-search__tooltip-text" role="tooltip" id="tooltip-children">Укажите количество
+                  детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются
+                  бесплатно.</span>
+              </div>
+            </div>
+            <span class="modal-search__input-with-buttons">
+              <button class="modal-search__button-edit modal-search__button-decrease" type="button">
+                <span class="visually-hidden">Уменьшить число детей на 1</span>
+              </button>
+              <input class="text-input modal-search__field" id="input-children" type="number" name="children"
+                placeholder="0" value="2" min="0" required>
+              <button class="modal-search__button-edit modal-search__button-increase" type="button">
+                <span class="visually-hidden">Увеличить число детей на 1</span>
+              </button>
+            </span>
+          </div>
+          <button class="button button--util modal-search__button-search" type="submit">Найти</button>
+        </form>
+      </section>
+    </dialog>
+    <script src="scripts/modal-window.js"></script>
   </body>
 </html>
