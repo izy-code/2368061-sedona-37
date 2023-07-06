@@ -824,7 +824,6 @@ body {
   margin: 0;
   margin-bottom: 64px;
   padding-right: 50px;
-  font-family: inherit;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -835,9 +834,9 @@ body {
 .modal-search__form {
   --gap-search-form: 48px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 248px 1fr;
   row-gap: var(--gap-search-form);
-  column-gap: 25px;
+  column-gap: 30px;
   align-items: center;
 }
 
@@ -851,11 +850,11 @@ body {
 .modal-search__label--departure {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 .modal-search__label-text,
 .modal-search__wrapper .modal-search__label {
+  align-self: center;
   width: 137px;
   padding-right: 5px;
   font-size: 20px;
@@ -871,7 +870,6 @@ body {
 .modal-search__label--arrival .modal-search__field,
 .modal-search__label--departure .modal-search__field {
   flex-grow: 1;
-  align-self: stretch;
   padding: 13px 56px 11px 20px;
   background-image: url("../images/icons-date.svg");
   background-position: right 20px center;
@@ -888,14 +886,14 @@ body {
   font-size: 16px;
 }
 
-.modal-search__notice--error {
+.modal-search__field--error + .modal-search__notice {
   color: var(--color-font-error);
 }
 
 .modal-search__wrapper {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  height: 100%;
 }
 
 .modal-search__wrapper--children {
@@ -924,9 +922,8 @@ body {
 
 .modal-search__button-edit {
   display: flex;
-  align-self: center;
   width: 40px;
-  height: 48px;
+  min-height: 48px;
   padding: 0;
   background-color: var(--color-btn-form);
   border: none;
@@ -980,7 +977,7 @@ body {
 
 .modal-search__label-with-tooltip .modal-search__label {
   width: fit-content;
-  max-width: 104px;
+  max-width: 118px;
   margin-right: 6px;
 }
 
@@ -1352,6 +1349,7 @@ body {
   width: 20px;
   height: 20px;
   padding: 0;
+  font: inherit;
   background: var(--color-bgnd-basic);
   border: none;
   border-radius: 5px;

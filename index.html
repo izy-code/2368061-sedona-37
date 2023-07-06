@@ -151,19 +151,18 @@
       </footer>
     </div>
 
-    <dialog class="modal index__modal-search">
+    <dialog class="modal index__modal-search" aria-labelledby="modal-search-title">
       <button class="modal-close-button">
         <span class="visually-hidden">Закрыть модальное окно</span>
       </button>
       <section class="modal-search">
-        <h2 class="modal-search__title">Поиск гостиницы в Седоне</h2>
+        <h2 class="modal-search__title" id="modal-search-title">Поиск гостиницы в Седоне</h2>
         <form class="modal-search__form" action="https://echo.htmlacademy.ru/" method="get">
           <label class="modal-search__label modal-search__label--arrival">
             <span class="modal-search__label-text">Дата Заезда:</span>
-            <input class="text-input modal-search__field" type="text" name="date-arrival" placeholder="Укажите дату"
-              value="27 апреля 2020" required autofocus>
-            <span class="modal-search__notice modal-search__notice--error" aria-live="assertive">Мы не можем отправить
-              вас в прошлое.</span>
+            <input class="text-input modal-search__field modal-search__field--error" type="text" name="date-arrival"
+              placeholder="Укажите дату" value="27 апреля 2020" required autofocus>
+            <span class="modal-search__notice" aria-live="assertive">Мы не можем отправить вас в прошлое.</span>
           </label>
           <label class="modal-search__label modal-search__label--departure">
             <span class="modal-search__label-text">Дата Выезда:</span>
