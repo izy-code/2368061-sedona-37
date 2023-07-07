@@ -58,8 +58,8 @@
   --color-form: #3f5e72;
   --color-brdr-basic: #000000;
   --color-brdr-catalog-1: #e5e5e5;
-  --color-brdr-catalog-1-hover: #68a2ca;
   --color-brdr-catalog-2: #e6e6e6;
+  --color-brdr-catalog-hover: #68a2ca;
   --color-brdr-text: #756257;
   --color-brdr-pagination: #82b3d3;
   --color-brdr-tile: rgba(0, 0, 0, 0.3);
@@ -166,7 +166,6 @@ body {
 
 .nav__link {
   display: block;
-  max-width: 300px;
   padding: 14px 10px;
   font-size: 20px;
   line-height: 24px;
@@ -195,7 +194,7 @@ body {
 
 .nav__user {
   justify-content: flex-end;
-  min-width: 88px;
+  min-width: 105px;
   margin: 0 20px;
 }
 
@@ -764,10 +763,6 @@ a.button--reset:not([href]) {
   border: none;
   border-radius: 30px;
   box-shadow: 0 25px 50px 0 var(--color-shadow-modal);
-}
-
-.modal::-webkit-backdrop {
-  background-color: rgba(242, 242, 242, 0.8);
 }
 
 .modal::backdrop {
@@ -1430,7 +1425,7 @@ a.button--reset:not([href]) {
 }
 
 .catalog__sort:hover {
-  border-color: var(--color-brdr-catalog-1-hover);
+  border-color: var(--color-brdr-catalog-hover);
 }
 
 .catalog__sort:disabled {
