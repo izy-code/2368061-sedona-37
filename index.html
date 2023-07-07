@@ -151,7 +151,7 @@
       </footer>
     </div>
 
-    <dialog class="modal index__modal-search" aria-labelledby="modal-search-title">
+    <dialog class="modal index__modal-search" aria-labelledby="modal-search-title" data-test="modal">
       <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть модальное окно</span>
       </button>
@@ -178,7 +178,7 @@
                 <span class="visually-hidden">Уменьшить число взрослых на 1</span>
               </button>
               <input class="text-input modal-search__field" id="input-adults" type="number" name="adults"
-                placeholder="1" value="2" min="1" required>
+                placeholder="1" value="2" min="1" max="99" required>
               <button class="modal-search__button-edit modal-search__button-increase" type="button">
                 <span class="visually-hidden">Увеличить число взрослых на 1</span>
               </button>
@@ -201,7 +201,7 @@
                 <span class="visually-hidden">Уменьшить число детей на 1</span>
               </button>
               <input class="text-input modal-search__field" id="input-children" type="number" name="children"
-                placeholder="0" value="2" min="0" required>
+                placeholder="0" value="2" min="0" max="99" required>
               <button class="modal-search__button-edit modal-search__button-increase" type="button">
                 <span class="visually-hidden">Увеличить число детей на 1</span>
               </button>

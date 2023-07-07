@@ -58,8 +58,8 @@
   --color-form: #3f5e72;
   --color-brdr-basic: #000000;
   --color-brdr-catalog-1: #e5e5e5;
-  --color-brdr-catalog-1-hover: #68a2ca;
   --color-brdr-catalog-2: #e6e6e6;
+  --color-brdr-catalog-hover: #68a2ca;
   --color-brdr-text: #756257;
   --color-brdr-pagination: #82b3d3;
   --color-brdr-tile: rgba(0, 0, 0, 0.3);
@@ -166,7 +166,6 @@ body {
 
 .nav__link {
   display: block;
-  max-width: 300px;
   padding: 14px 10px;
   font-size: 20px;
   line-height: 24px;
@@ -195,7 +194,7 @@ body {
 
 .nav__user {
   justify-content: flex-end;
-  min-width: 88px;
+  min-width: 105px;
   margin: 0 20px;
 }
 
@@ -766,10 +765,6 @@ a.button--reset:not([href]) {
   box-shadow: 0 25px 50px 0 var(--color-shadow-modal);
 }
 
-.modal::-webkit-backdrop {
-  background-color: rgba(242, 242, 242, 0.8);
-}
-
 .modal::backdrop {
   background-color: rgba(242, 242, 242, 0.8);
 }
@@ -885,6 +880,7 @@ a.button--reset:not([href]) {
   margin-left: 137px;
   padding: 4px 20px 0;
   font-size: 16px;
+  color: var(--color-font-second);
 }
 
 .modal-search__field--error + .modal-search__notice {
@@ -918,7 +914,7 @@ a.button--reset:not([href]) {
 
 .modal-search__wrapper .modal-search__field {
   width: 31px;
-  padding: 13px 0 11px;
+  padding: 13px 5px 11px;
   line-height: 20px;
   text-align: center;
   appearance: textfield;
@@ -960,7 +956,7 @@ a.button--reset:not([href]) {
 
 .modal-search__wrapper .modal-search__field:focus,
 .modal-search__button-edit:focus {
-  outline-offset: -3px;
+  outline-offset: -2px;
 }
 
 .modal-search__button-edit:not(:disabled):hover::after,
@@ -1307,13 +1303,14 @@ a.button--reset:not([href]) {
 
 .filter__form-label--price {
   display: grid;
+  align-items: center;
 }
 
 .filter__form-label--price .filter__form-span {
   z-index: 1;
   grid-area: 1 / 1 / 2 / 2;
   justify-self: end;
-  padding: 13px 20px 11px 0;
+  padding: 13px 20px 11px;
   line-height: 24px;
   color: var(--color-font-basic);
   opacity: 0.3;
@@ -1322,7 +1319,8 @@ a.button--reset:not([href]) {
 .filter__form-label--price .filter__form-input {
   grid-area: 1 / 1 / 2 / 2;
   width: 100%;
-  padding: 13px 45px 11px 20px;
+  height: 100%;
+  padding: 12px 45px 12px 20px;
   font-weight: 700;
   border-radius: 4px 0 0 4px;
   appearance: textfield;
@@ -1428,7 +1426,7 @@ a.button--reset:not([href]) {
 }
 
 .catalog__sort:hover {
-  border-color: var(--color-brdr-catalog-1-hover);
+  border-color: var(--color-brdr-catalog-hover);
 }
 
 .catalog__sort:disabled {
@@ -1633,6 +1631,7 @@ a.button--reset:not([href]) {
   padding: 12px 10px;
   font-size: 20px;
   line-height: 36px;
+  text-align: center;
 }
 
 .catalog__pagination-link[href]:not(.catalog__pagination-link--current):hover {
