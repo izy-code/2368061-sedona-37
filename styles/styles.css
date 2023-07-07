@@ -880,6 +880,7 @@ a.button--reset:not([href]) {
   margin-left: 137px;
   padding: 4px 20px 0;
   font-size: 16px;
+  color: var(--color-font-second);
 }
 
 .modal-search__field--error + .modal-search__notice {
