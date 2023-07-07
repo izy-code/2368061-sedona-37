@@ -317,6 +317,7 @@ body {
 }
 
 .page-container .button:disabled,
+.modal .button:disabled,
 a.button:not([href]) {
   color: var(--color-font-bgnd);
   background-color: var(--color-btn-disabled);
@@ -337,7 +338,8 @@ a.button:not([href]) {
   background-color: var(--color-btn-util);
 }
 
-.page-container .button--reset {
+.page-container .button--reset,
+.modal .button--reset {
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -350,6 +352,7 @@ a.button:not([href]) {
 }
 
 .page-container .button--reset:disabled,
+.modal .button--reset:disabled,
 a.button--reset:not([href]) {
   color: var(--color-font-bgnd-disabled);
   background-color: rgba(0, 0, 0, 0);
@@ -1284,14 +1287,16 @@ a.button--reset:not([href]) {
   opacity: 0.3;
 }
 
-.check .check__input:disabled,
-.radio .radio__input:disabled {
+.check input.check__input:disabled,
+.radio input.radio__input:disabled {
   background-color: var(--color-bgnd-basic);
   opacity: 0.3;
 }
 
-.check__input:disabled + .check__text,
-.radio__input:disabled + .radio__text {
+input.check__input:disabled + .check__text,
+input.radio__input:disabled + .radio__text,
+.check input.check__input:disabled::before,
+.radio input.radio__input:disabled::before {
   opacity: 0.3;
 }
 /* Custom checkbox and radio button ending */
@@ -1372,13 +1377,18 @@ a.button--reset:not([href]) {
   right: 0;
 }
 
-.filter__form-range-thumb:hover,
+.filter__form-range-thumb:not(:disabled):hover,
 .filter__form-range-thumb:focus-visible {
   box-shadow: 0 4px 10px 0 var(--color-shadow-thumb-hover);
 }
 
-.filter__form-range-thumb:active {
+.filter__form-range-thumb:not(:disabled):active {
   box-shadow: 0 0 0 2px var(--color-brdr-thumb), 0 7px 15px 0 var(--color-shadow-thumb-active);
+}
+
+.filter__form-range-thumb:disabled {
+  background-color: var(--color-bgnd-basic-dark-hover);
+  cursor: default;
 }
 /* Multi-thumb range slider ending*/
 
