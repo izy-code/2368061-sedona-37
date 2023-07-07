@@ -1638,7 +1638,7 @@ a.button--reset:not([href]) {
   box-shadow: inset 0 0 0 1px var(--color-brdr-pagination);
 }
 
-.catalog .catalog__pagination .catalog__pagination-link--current {
+.catalog__pagination a.catalog__pagination-link--current {
   color: var(--color-font-basic);
   background-color: var(--color-bgnd-basic-dark);
   cursor: initial;
