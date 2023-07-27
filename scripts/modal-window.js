@@ -5,7 +5,7 @@ const dialogSearch = document.querySelector('.index__modal-search');
 function connectButtonsWithDialog(buttonOpen, dialog) {
   buttonOpen.addEventListener('click', () => {
     dialog.showModal();
-    // Скрытие полосы прокрутки основного окна
+    // Блокировка прокрутки основного окна
     document.body.style.overflow = "hidden";
     // Кнопка закрытия окна
     const buttonClose = dialog.querySelector('.modal-close-button');
@@ -13,7 +13,7 @@ function connectButtonsWithDialog(buttonOpen, dialog) {
       dialog.close();
       document.body.style.overflow = "visible";
     };
-    // Закрытие модального окна после клика на backdrop и возврат полосы прокрутки
+    // Закрытие модального окна после клика на backdrop и возврат прокрутки
     dialog.onclick = (event) => {
       if (event.target === dialog) {
         dialog.close();
